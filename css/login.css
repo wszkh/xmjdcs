@@ -1,0 +1,407 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+figure,
+header,
+body,
+input,
+table,
+td,
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.w {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#logo {
+    position: relative;
+    width: 300px;
+    margin: 10px 0;
+    height: 60px;
+    float: left;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+
+#header .h-top {
+    width: 990px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+#header .h-top .icon {
+    position: relative;
+    width: 300px;
+    margin: 10px 0;
+    height: 60px;
+    float: left;
+}
+
+.icon b {
+    display: block;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header .h-top .icon img:nth-of-type(2) {
+    display: block;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header .h-top .text {
+    position: relative;
+    color: #999;
+    float: right;
+    top: 52px;
+}
+
+.text b {
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    margin: 0 5px;
+    background: url(../img/q_icon.png) no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#header .h-top a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#header .h-bottom {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 248, 240);
+    text-align: center;
+    line-height: 50px;
+}
+
+#header .h-bottom div,
+.top-top {
+    display: inline;
+}
+
+#header .h-bottom div p,
+.top-top p {
+    font-size: 12px;
+    color: #999999;
+    display: inline;
+}
+
+#header .h-bottom div img,
+.top-top img {
+    top: 8px;
+}
+
+#header .h-bottom p a {
+    color: #323232;
+}
+
+#header .h-bottom p a:hover {
+    text-decoration: underline;
+}
+
+
+/*=====2、content=====*/
+
+#content {
+    width: 100%;
+    height: 520px;
+    background: url(../img/a42c5134529affb4.jpg) no-repeat center;
+    background-color: rgb(11, 142, 212);
+}
+
+#w {
+    position: relative;
+    width: 990px;
+    margin: 0 auto;
+}
+
+#content .input_div {
+    width: 344px;
+    height: 438px;
+    background-color: wheat;
+    position: absolute;
+    right: 130px;
+    top: 10px;
+}
+
+#content .input_div .info-top {
+    height: 100px;
+    background-color: rgb(255, 248, 240);
+    text-align: center;
+}
+
+#content .input_div .info-top .top-bottom {
+    background-color: white;
+    height: 55px;
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    /*设置中间竖线的颜色*/
+    color: rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#content .input_div .info-top .top-bottom button {
+    width: 160px;
+    height: 55px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    color: rgb(53, 53, 53);
+}
+
+#content .input_div .info-top .top-bottom button:hover {
+    color: red;
+}
+
+#content .input_div .info-top .top-bottom button:focus {
+    color: red;
+    /*按钮和输入框成为焦点后默认的边框，是outline*/
+    outline: none;
+}
+
+#content .input_div .info-middle {
+    height: 288px;
+    background-color: white;
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+
+/*用户名和密码*/
+
+#content .input_div .info-middle .username,
+#content .input_div .info-middle .password {
+    background-color: white;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 40px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+#content .input_div .info-middle .password {
+    top: 110px;
+}
+
+#content .input_div .info-middle img {
+    float: left;
+    height: 100%;
+    border: 1px solid rgb(180, 180, 180)
+}
+
+#content .input_div .info-middle input {
+    border: 0;
+    float: left;
+    height: 100%;
+    width: auto;
+    padding-left: 10px;
+}
+
+#content .input_div .info-middle input:focus {
+    outline: none;
+}
+
+
+/*忘记密码*/
+
+#content .input_div .info-middle a {
+    position: absolute;
+    top: 180px;
+    right: 20px;
+    font-size: 12px;
+    color: rgb(220, 220, 220);
+}
+
+#content .input_div .info-middle a:hover,
+.about:hover,
+.call:hover,
+.club:hover,
+.english:hover,
+.friend:hover,
+.love:hover,
+.peo:hover,
+.people:hover,
+.phone:hover,
+.shop:hover,
+.tall:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#content .info-middle #log {
+    background-color: red;
+    font-size: 20px;
+    letter-spacing: 23px;
+    height: 55px;
+    width: 89%;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 30px;
+}
+
+#content .info-middle #log:focus {
+    color: yellow;
+    outline: none;
+}
+
+#content .input_div .info-bottom {
+    height: 50px;
+    background-color: white;
+    /*text-align: center;*/
+}
+
+
+/*
+ * 用列表调了半天感觉效果很勉强
+ * #content .input_div .info-bottom ul{
+    float: left;
+    list-style-position: initial;
+    list-style-type: circle;
+}
+
+#content .input_div .info-bottom .qq{
+    list-style-image: url(../img/qq.png);
+
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+#content .input_div .info-bottom .wx{
+    list-style-image: url(../img/weixin.png);
+
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}*/
+
+
+/*设置注册按钮*/
+
+#content .input_div .info-bottom div {
+    top: 8px;
+    /*left: 111px;*/
+    display: inline;
+}
+
+#content .input_div .info-bottom .login {
+    position: absolute;
+    left: 12px;
+}
+
+#content .input_div .info-bottom .logon {
+    /*position: absolute;*/
+    left: 233px;
+}
+
+#content .input_div .info-bottom div p {
+    color: red;
+    display: inline;
+}
+
+#content .input_div .info-bottom div p:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#content .input_div .info-bottom div img {
+    top: 6px
+}
+
+
+/*=====3、footer=====*/
+
+#footer {
+    width: 100%;
+    height: 111px;
+    background-color: white;
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    text-align: center;
+    top: 5px;
+}
+
+#footer .versions {
+    top: 5px;
+}
+
+#footer .other a {
+    font-size: 12px;
+    color: rgb(220, 220, 220);
+}
