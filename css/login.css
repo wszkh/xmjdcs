@@ -41,12 +41,7 @@ li {
 }
 
 body {
-    overflow: hidden;
-}
-
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
@@ -80,7 +75,7 @@ img {
 
 #header {
     width: 100%;
-    height: 150px;
+    height: 130px;
     background-color: white;
 }
 
@@ -176,9 +171,9 @@ img {
 
 #content {
     width: 100%;
-    height: 520px;
+    height: 480px;
     background: url(../img/a42c5134529affb4.jpg) no-repeat center;
-    background-color: rgb(11, 142, 212);
+    background-color: #FC3D71;
 }
 
 #w {
@@ -188,17 +183,19 @@ img {
 }
 
 #content .input_div {
+    float: right;
+    top: 10px;
     width: 344px;
     height: 438px;
-    background-color: wheat;
-    position: absolute;
-    right: 130px;
-    top: 10px;
+    background-color: #fff;
+    margin-top: 10px;
 }
 
 #content .input_div .info-top {
-    height: 100px;
-    background-color: rgb(255, 248, 240);
+    background: #fff8f0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -206,62 +203,74 @@ img {
     background-color: white;
     height: 55px;
     position: absolute;
-    width: 100%;
+    width: 343px;
     top: 45px;
     /*设置中间竖线的颜色*/
-    color: rgb(200, 200, 200);
-    border-bottom: 1px solid rgb(200, 200, 200);
+    color: #666B83;
+    border-bottom: 1px solid #F4F4F4;
+    z-index: 3;
 }
 
 #content .input_div .info-top .top-bottom button {
     width: 160px;
     height: 55px;
     border: 0;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
     font-size: 20px;
     color: rgb(53, 53, 53);
 }
 
 #content .input_div .info-top .top-bottom button:hover {
-    color: red;
-}
-
-#content .input_div .info-top .top-bottom button:focus {
-    color: red;
-    /*按钮和输入框成为焦点后默认的边框，是outline*/
-    outline: none;
+    color: #f00;
 }
 
 #content .input_div .info-middle {
-    height: 288px;
+    height: 350px;
     background-color: white;
-    border-top: 1px solid rgb(200, 200, 200);
-    border-bottom: 1px solid rgb(200, 200, 200);
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    position: relative;
 }
 
 
 /*用户名和密码*/
 
+#content .input_div .info-middle .username .login-label {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) no-repeat;
+}
+
+#content .input_div .info-middle .password .login-label {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) no-repeat;
+}
+
 #content .input_div .info-middle .username,
 #content .input_div .info-middle .password {
     background-color: white;
-    width: auto;
-    height: 50px;
+    width: 306px;
+    height: 40px;
     position: absolute;
     left: 20px;
     right: 20px;
-    top: 40px;
+    top: 100px;
     border: 1px solid rgb(180, 180, 180);
 }
 
 #content .input_div .info-middle .password {
-    top: 110px;
-}
-
-#content .input_div .info-middle img {
-    float: left;
-    height: 100%;
-    border: 1px solid rgb(180, 180, 180)
+    top: 170px;
 }
 
 #content .input_div .info-middle input {
@@ -269,11 +278,7 @@ img {
     float: left;
     height: 100%;
     width: auto;
-    padding-left: 10px;
-}
-
-#content .input_div .info-middle input:focus {
-    outline: none;
+    padding-left: 50px;
 }
 
 
@@ -281,10 +286,10 @@ img {
 
 #content .input_div .info-middle a {
     position: absolute;
-    top: 180px;
+    top: 240px;
     right: 20px;
     font-size: 12px;
-    color: rgb(220, 220, 220);
+    color: #666666;
 }
 
 #content .input_div .info-middle a:hover,
@@ -304,15 +309,19 @@ img {
 }
 
 #content .info-middle #log {
+    border: 1px solid #cb2a2d;
+    margin: 0 auto;
+    height: 32px;
+    position: relative;
     background-color: red;
     font-size: 20px;
     letter-spacing: 23px;
-    height: 55px;
     width: 89%;
     position: absolute;
     left: 20px;
     right: 20px;
     bottom: 30px;
+    color: #fff;
 }
 
 #content .info-middle #log:focus {
@@ -321,67 +330,91 @@ img {
 }
 
 #content .input_div .info-bottom {
-    height: 50px;
-    background-color: white;
-    /*text-align: center;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    border-top: 1px solid #f4f4f4;
+    height: 50PX;
+    background-color: #fcfcfc;
+    text-align: center;
+    position: relative;
 }
-
-
-/*
- * 用列表调了半天感觉效果很勉强
- * #content .input_div .info-bottom ul{
-    float: left;
-    list-style-position: initial;
-    list-style-type: circle;
-}
-
-#content .input_div .info-bottom .qq{
-    list-style-image: url(../img/qq.png);
-
-    position: absolute;
-    left: 30px;
-    top: 10px;
-}
-
-#content .input_div .info-bottom .wx{
-    list-style-image: url(../img/weixin.png);
-
-    position: absolute;
-    left: 100px;
-    top: 10px;
-}*/
 
 
 /*设置注册按钮*/
 
-#content .input_div .info-bottom div {
-    top: 8px;
-    /*left: 111px;*/
-    display: inline;
-}
-
-#content .input_div .info-bottom .login {
+#content .input_div .info-bottom .login b {
+    width: 19px;
+    height: 18px;
+    display: block;
+    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/QQ-weixin.png) no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 16px;
     position: absolute;
     left: 12px;
 }
 
-#content .input_div .info-bottom .logon {
-    /*position: absolute;*/
-    left: 233px;
+.login span {
+    display: block;
+    position: absolute;
+    left: 40px;
 }
 
-#content .input_div .info-bottom div p {
-    color: red;
+.login .line {
+    color: #ccc;
+    padding: 0 25px;
+}
+
+.loginw {
+    position: absolute;
+    left: 80px;
+    top: 0;
+}
+
+.loginw b {
+    width: 19px;
+    height: 18px;
+    display: block;
+    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/QQ-weixin.png) no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 16px;
+}
+
+.loginw span {
     display: inline;
+    margin-left: 30px;
 }
 
-#content .input_div .info-bottom div p:hover {
+#content .input_div .info-bottom .logon {
+    position: absolute;
+    left: 260px;
+}
+
+#content .input_div .info-bottom .logon b {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) -104px -75px no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.logon a {
+    color: red;
+}
+
+#content .input_div .info-bottom div a:hover {
     color: red;
     text-decoration: underline;
-}
-
-#content .input_div .info-bottom div img {
-    top: 6px
 }
 
 
@@ -389,19 +422,19 @@ img {
 
 #footer {
     width: 100%;
-    height: 111px;
+    height: 85px;
     background-color: white;
-    color: rgb(153, 153, 153);
+    color: #666666;
     font-size: 12px;
     text-align: center;
-    top: 5px;
+    padding-top: 30px;
 }
 
 #footer .versions {
-    top: 5px;
+    margin-top: 10PX;
 }
 
 #footer .other a {
     font-size: 12px;
-    color: rgb(220, 220, 220);
+    color: #666666;
 }
