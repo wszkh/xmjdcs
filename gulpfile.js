@@ -18,38 +18,32 @@ gulp.task("copyImag", function() {
         .pipe(gulp.dest("dist/img"))
         .pipe(connect.reload());
 });
-// gulp.task("sass", function() {
-//     gulp.src("sass/*.scss")
-//         .pipe(sourcemaps.init())
-//         .pipe(sass({ outputStyle: 'compressed' }))
-//         .pipe(sourcemaps.write())
-//         .pipe(gulp.dest("dist/css"));
-// });
 
-gulp.task("concat", function() {
+gulp.task("copyJs", function() {
     gulp.src("js/*.js")
+        //.pipe(concat("min.js"))
         .pipe(gulp.dest("dist/js"))
-        .pipe(concat("min.js"))
-        // .pipe(uglify())
-        // .pipe(rename({ suffix: ".min" }))
-        // .pipe(gulp.dest("dist/js"))
+        .pipe(connect.reload());
+    // .pipe(uglify())
+    // .pipe(rename({ suffix: ".min" }))
+    // .pipe(gulp.dest("dist/js"))
 })
 gulp.task("cleanCss", function() {
-    gulp.src("css/*.css")
-        .pipe(cleanCss())
-        .pipe(gulp.dest("dist/css"))
-})
-gulp.task("babel", function() {
-    gulp.src("js/*.js")
-        .pipe(babel({ "presets": ["es2015"] }))
-        .pipe(gulp.dest("dist/js"))
-})
+        gulp.src("css/*.css")
+            .pipe(cleanCss())
+            .pipe(gulp.dest("dist/css"))
+    })
+    // gulp.task("babel", function() {
+    //     gulp.src("js/*.js")
+    //         .pipe(babel({ "presets": ["es2015"] }))
+    //         .pipe(gulp.dest("dist/js"))
+    // })
 gulp.task("watch", function() {
     gulp.watch("*.html", ["copyHtml"]);
     gulp.watch("img/*", ["copyImag"]);
     //gulp.watch("sass/*.scss", ["sass"]);
     gulp.watch("css/*.css", ["cleanCss"]);
-    gulp.watch("js/*.js", ["concat"])
+    gulp.watch("js/*.js", ["copyJs"])
 });
 //搭建gulp服务器 打开上线文件
 gulp.task('server', function() {
@@ -60,6 +54,6 @@ gulp.task('server', function() {
 })
 
 //全部copy命令
-gulp.task("build", ["copyHtml", "copyImag", "concat", "cleanCss"]);
+gulp.task("build", ["copyHtml", "copyImag", "copyJs", "cleanCss"]);
 //该命令同时打开gulp服务器 和 文件监听 服务器显示随文件改变 改变
 gulp.task("default", ["server", "watch"]);

@@ -49,6 +49,11 @@
 
                 <!--输入框模块-->
                 <div class="info-middle">
+                    <div class="msg-wrap">
+                        <div class="msg-error"><b></b>请输入账户名和密码</div>
+                    </div>
+
+
                     <div class="username">
                         <label for="loginname" class="login-label name-label"></label>
                         <input type="text" name="username" id="" value="" placeholder="邮箱/用户名/已验证手机" />
@@ -63,6 +68,46 @@
                     <a href="https://safe.jd.com/findPwd/index.action">忘记密码</a>
 
                     <button id="log">登  录</button>
+                </div>
+
+
+                <div class="qrcode-login" style="display: block; visibility: visible;">
+                    <div class="mc">
+                        <div class="qrcode-error-2016" style="left: 0px; display: none;">
+                            <div class="qrcode-error-mask">
+                            </div>
+                            <p class="err-cont">二维码已失效</p>
+                            <a href="javascript:void(0)" class="refresh-btn" clstag="pageclick|keycount|login_pc_201804112|11">刷新</a>
+                        </div>
+                        <div class="qrcode-main">
+                            <div class="qrcode-img" style="left: 64px;">
+                                <img src="//qr.m.jd.com/show?appid=133&amp;size=147&amp;t=1561165532892" alt="">
+                                <div class="qrcode-error02 hide" id="J-qrcoderror" style="display: none;">
+                                    <a href="#none"> <span class="error-icon"></span>
+                                        <div class="txt">网络开小差咯<span class="ml10">刷新二维码</span></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="qrcode-help" style="display: none;"></div>
+                        </div>
+                        <div class="qrcode-panel">
+                            <ul>
+                                <li class="fore1">
+                                    <span>打开</span>
+                                    <a href="/uc/links?tag=apps" target="_blank" clstag="pageclick|keycount|201607144|9">
+                                        <span class="red">手机京东</span></a>
+                                </li>
+                                <li>扫描二维码</li>
+                            </ul>
+                        </div>
+                        <div class="coagent qr-coagent" id="qrCoagent">
+                            <ul>
+                                <li><b></b><em>免输入</em></li>
+                                <li><b class="faster"></b><em>更快&nbsp;</em></li>
+                                <li><b class="more-safe"></b><em>更安全</em></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="info-bottom">
@@ -112,9 +157,10 @@
             <div class="versions">
                 <span>Copyright © 2004-2018 京东JD.com 版权所有</span>
             </div>
-
         </div>
     </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
