@@ -2,14 +2,906 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <meta charset="gbk" />
+    <meta name="keywords" content="京东超市" />
+    <meta name="description" content="根据季节变化及节日需求及时换新的京东五大事业部的精品商品的导购频道  消费品、生鲜、服饰家居、家电、3C" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>京东超市-品类齐全-正品行货-精致服务</title>
+    <link rel="icon" href="//www.jd.com/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index1.css">
 </head>
 
 <body>
-    首页首页
+    <div id="shortcut-2014">
+        <div class="w">
+            <ul class="fl">
+                <li id="ttbar-home"><i class="iconfont"></i><a href="//www.jd.com/" target="_blank">京东首页</a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li class="fore1" id="ttbar-login"> <a href="javascript:login();" class="link-login">你好，请登录</a> <a href="javascript:regist();" class="link-regist style-red">免费注册</a>
+
+                </li>
+                <li class="spacer"></li>
+                <li class="fore2">
+                    <div class="dt"> <a target="_blank" href="//order.jd.com/center/list.action">我的订单</a>
+
+                    </div>
+                </li>
+                <li class="spacer"></li>
+
+
+                <li class="fore3 dorpdown" id="ttbar-myjd" data-load="1">
+                    <div class="dt cw-icon">
+                        <a target="_blank" href="//home.jd.com/">我的京东</a><i class="iconfont"></i>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="myjdlist1">
+                            <div class="fore1">
+                                <div class="item"> <a href="//order.jd.com/center/list.action" clstag="" target="_blank">待处理订单<span id="num-unfinishedorder"></span></a> </div>
+                                <div class="item"> <a href="//myjd.jd.com/afs/indexNew.action?entry=1" clstag="" target="_blank">返修退换货</a> </div>
+                                <div class="item"> <a href="//t.jd.com/product/followProductList.action?isReduce=true" clstag="" target="_blank">降价商品<span id="num-reduction"></span></a> </div>
+                            </div>
+                            <div class="fore2">
+                                <div class="item"> <a href="//joycenter.jd.com/msgCenter/queryHistoryMessage.action" target="_blank">消息<span id="num-tip"></span></a> </div>
+                                <div class="item"> <a href="http://question.jd.com/myjd/getMyjdAnswerList.action" clstag="" target="_blank">我的问答<span id="num-consultation"></span></a> </div>
+                                <div class="item"> <a href="//t.jd.com/home/follow" clstag="" target="_blank">我的关注</a> </div>
+                            </div>
+                        </div>
+                        <div class="myjdlist2">
+                            <div class="fore1">
+                                <div class="item"> <a href="//bean.jd.com/myJingBean/list" clstag="" target="_blank">我的京豆</a> </div>
+                                <div class="item baitiao"> <a href="//baitiao.jd.com/" clstag="jr|keycount|njdhome|wdbaitiao" target="_blank">我的白条</a> </div>
+                            </div>
+                            <div class="fore2">
+                                <div class="item"> <a href="//quan.jd.com/user_quan.action" target="_blank">我的优惠券<span id="num-ticket"></span></a> </div>
+                                <div class="item"> <a href="//trade.jr.jd.com/centre/browse.action" clstag="" target="_blank">我的理财</a> </div>
+                            </div>
+                        </div>
+                        <div class="viewlist" style="display:none;">
+                            <div class="smt">
+                                <h4>我的足迹</h4> <span class="extra">							<a target="_blank" href="//my.jd.com/history/list.html">更多&nbsp;&gt;</a>						</span> </div>
+                            <div class="smc"></div>
+                        </div>
+                    </div>
+                </li>
+
+
+
+                <li class="spacer"></li>
+                <li class="fore4">
+                    <div class="dt"> <a target="_blank" href="//vip.jd.com/">京东会员</a>
+
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore5">
+                    <div class="dt"> <a target="_blank" href="//b.jd.com/">企业采购</a>
+
+                    </div>
+                </li>
+                <li class="spacer"></li>
+
+
+                <li class="fore6 dorpdown" id="ttbar-serv" data-load="1">
+                    <div class="dt cw-icon">
+                        客户服务<i class="iconfont"></i>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="item-client">客户</div>
+                        <div class="item"><a href="//help.jd.com/index.html" target="_blank" true="">帮助中心</a></div>
+                        <div class="item"><a href="//myjd.jd.com/afs/indexNew.action?entry=2" target="_blank" true="">售后服务</a></div>
+                        <div class="item"><a href="//chat.jd.com/jdchat/custom.action " target="_blank" true="">在线客服</a></div>
+                        <div class="item"><a href="//myjd-crm.jd.com/opinion/orderList.action" target="_blank" true="">意见建议</a></div>
+                        <div class="item"><a href="//myjd-crm.jd.com/appoint/telebooking.action" target="_blank" true="">电话客服</a></div>
+                        <div class="item"><a href="//www.jd.com/contact/service.html" target="_blank" true="">客服邮箱</a></div>
+                        <div class="item"><a href="https://jrhelp.jd.com/" target="_blank" true="">金融咨询</a></div>
+                        <div class="item"><a href="//chat.jd.com/jd/chat?entry=jd_web_joybuy" target="_blank" true="">全球售客服</a></div>
+                        <div class="item-business">商户</div>
+                        <div class="item"><a href="https://lai.jd.com" target="_blank" true="">合作招商</a></div>
+                        <div class="item"><a href="//chengzhang.jd.com" target="_blank" true="">成长中心</a></div>
+                        <div class="item"><a href="//shop.jd.com/" target="_blank" true="">商家后台</a></div>
+                        <div class="item"><a href="//jm.jd.com/index/index.html" target="_blank" true="">京麦工作台</a></div>
+                        <div class="item"><a href="//helpcenter.jd.com/venderportal/index.html" target="_blank" true="">商家帮助</a></div>
+                        <div class="item"><a href="//rule.jd.com/rule/index.action" target="_blank" true="">规则平台</a></div>
+                    </div>
+                </li>
+
+
+                <li class="spacer"></li>
+
+                <li class="fore7 dorpdown" id="ttbar-navs" data-load="1">
+                    <div class="dt cw-icon">
+                        网站导航<i class="iconfont"></i>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <dl class="fore1"> <dt>特色主题</dt>
+                            <dd>
+                                <div class="item"><a href="//try.jd.com/" target="_blank">京东试用</a></div>
+                                <div class="item"><a href="//jr.jd.com/" target="_blank">京东金融</a></div>
+                                <div class="item"><a href="//global.jd.com/" target="_blank">全球售</a></div>
+                                <div class="item"><a href="https://www.joybuy.com/  " target="_blank">国际站</a></div>
+                                <div class="item"><a href="//vip.jd.com/" target="_blank">京东会员</a></div>
+                                <div class="item"><a href="//xinpin.jd.com/" target="_blank">京东预售</a></div>
+                                <div class="item"><a href="//what.jd.com/" target="_blank">买什么</a></div>
+                                <div class="item"><a href=" https://www.jd.ru/" target="_blank">俄语站</a></div>
+                                <div class="item"><a href="//diy.jd.com/" target="_blank">装机大师</a></div>
+                                <div class="item"><a href=" https://pingce.jd.com/index.html" target="_blank">0元评测</a></div>
+                                <div class="item"><a href="//cn.jd.com/" target="_blank">港澳售</a></div>
+                                <div class="item"><a href="//a.jd.com/" target="_blank">优惠券</a></div>
+                                <div class="item"><a href="//miaosha.jd.com/" target="_blank">秒杀</a></div>
+                                <div class="item"><a href="//red.jd.com/" target="_blank">闪购</a></div>
+                                <div class="item"><a href="https://www.jd.id/" target="_blank">印尼站</a></div>
+                                <div class="item"><a href="https://ft.jd.com" target="_blank">京东金融科技</a></div>
+                                <div class="item"><a href="https://pro.jd.com/mall/active/3GDCbtDfi1tTEcVUKkfDkyHfQLfq/index.html" target="_blank">陪伴计划</a></div>
+                                <div class="item"><a href="//join.jd.com" target="_blank">出海招商</a></div>
+                                <div class="item"><a href="https://2.jd.com/" target="_blank">拍拍二手</a></div>
+                            </dd>
+                        </dl>
+                        <dl class="fore2"> <dt>行业频道</dt>
+                            <dd>
+                                <div class="item"><a href="//shouji.jd.com/" target="_blank">手机</a></div>
+                                <div class="item"><a href="https://shuma.jd.com/" target="_blank">智能数码</a></div>
+                                <div class="item"><a href="//3c.jd.com/" target="_blank">玩3C</a></div>
+                                <div class="item"><a href="//diannao.jd.com/" target="_blank">电脑办公</a></div>
+                                <div class="item"><a href="https://jiadian.jd.com/" target="_blank">家用电器</a></div>
+                                <div class="item"><a href="//smart.jd.com/" target="_blank">京鱼座智能</a></div>
+                                <div class="item"><a href="//channel.jd.com/fashion.html" target="_blank">服装城</a></div>
+                                <div class="item"><a href="https://fresh.jd.com/" target="_blank">京东生鲜</a></div>
+                                <div class="item"><a href="//channel.jd.com/jiazhuang.html" target="_blank">家装城</a></div>
+                                <div class="item"><a href="//baby.jd.com/" target="_blank">母婴</a></div>
+                                <div class="item"><a href="//channel.jd.com/chaoshi.html" target="_blank">食品</a></div>
+                                <div class="item"><a href="//nong.jd.com/" target="_blank">农资频道</a></div>
+                                <div class="item"><a href="http://car.jd.com" target="_blank">整车</a></div>
+                                <div class="item"><a href="//book.jd.com/" target="_blank">图书</a></div>
+                                <div class="item"><a href="https://imall.jd.com/laobao.html" target="_blank">劳动防护</a></div>
+                            </dd>
+                        </dl>
+                        <dl class="fore3"> <dt>生活服务</dt>
+                            <dd>
+                                <div class="item"><a href="//z.jd.com/" target="_blank">京东众筹</a></div>
+                                <div class="item"><a href="https://baitiao.jd.com" target="_blank">白条</a></div>
+                                <div class="item"><a href="//m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank">京东金融App</a></div>
+                                <div class="item"><a href="//trade.jr.jd.com/myxjk/jrbincome.action" target="_blank">京东小金库</a></div>
+                                <div class="item"><a href="//licai.jd.com/" target="_blank">理财</a></div>
+                                <div class="item"><a href="//chongzhi.jd.com/" target="_blank">话费</a></div>
+                                <div class="item"><a href="//jiaofei.jd.com/" target="_blank">水电煤</a></div>
+                                <div class="item"><a href="//caipiao.jd.com/" target="_blank">彩票</a></div>
+                                <div class="item"><a href="//trip.jd.com/" target="_blank">旅行</a></div>
+                                <div class="item"><a href="//jipiao.jd.com/" target="_blank">机票酒店</a></div>
+                                <div class="item"><a href="//movie.jd.com/" target="_blank">电影票</a></div>
+                                <div class="item"><a href="//daojia.jd.com/html/welcome.html" target="_blank">京东到家</a></div>
+                                <div class="item"><a href="//game.jd.com/" target="_blank">游戏</a></div>
+                                <div class="item"><a href="https://sale.jd.com/act/02ZCO1Nqk7eALJw.html " target="_blank">拍拍回收</a></div>
+                            </dd>
+                        </dl>
+                        <dl class="fore4"> <dt>更多精选</dt>
+                            <dd>
+                                <div class="item"><a href="https://lai.jd.com" target="_blank">合作招商</a></div>
+                                <div class="item"><a href="//mobile.jd.com/index.do" target="_blank">京东通信</a></div>
+                                <div class="item"><a href="//o.jd.com/market/index.action" target="_blank">京东E卡</a></div>
+                                <div class="item"><a href="//b.jd.com/" target="_blank">企业采购</a></div>
+                                <div class="item"><a href="//fw.jd.com/" target="_blank">服务市场</a></div>
+                                <div class="item"><a href="https://bg.jd.com/" target="_blank">办公生活馆</a></div>
+                                <div class="item"><a href="//zhaomu.jd.com/XCDLzm.html" target="_blank">乡村招募</a></div>
+                                <div class="item"><a href="//lj.jd.com/campus/intro.do" target="_blank">校园加盟</a></div>
+                                <div class="item"><a href="https://pro.jd.com/mall/active/3WA2zN8wkwc9fL9TxAJXHh5Nj79u/index.html" target="_blank">京东社区</a></div>
+                                <div class="item"><a href="http://group.jd.com/index/20000001.htm" target="_blank">游戏社区</a></div>
+                                <div class="item"><a href="//ipr.jd.com/edition" target="_blank">知识产权维权</a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+
+
+                <li class="spacer"></li>
+                <li class="fore8 dorpdown" id="ttbar-apps" data-load="1">
+                    <div class="dt cw-icon">
+                        <a target="_blank" href="//app.jd.com/">手机京东</a>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="dd-inner" id="ttbar-apps-main">
+                            <style type="text/css">
+                                .mobile_pop_item {
+                                    position: relative;
+                                    z-index: 5;
+                                    padding: 15px 0;
+                                    border-bottom: 1px solid #E7E7E7;
+                                }
+                                
+                                .mobile_pop_device_lk {
+                                    background-image: url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_mobile@1x.png);
+                                }
+                                
+                                .mobile_pop_qrcode {
+                                    position: absolute;
+                                    left: 5px;
+                                    top: 14px;
+                                    width: 74px;
+                                    height: 74px;
+                                    border: 1px solid #CCC;
+                                    background-color: #F7F7F7;
+                                }
+                                
+                                .mobile_pop_qrcode img {
+                                    width: 70px;
+                                    height: 70px;
+                                    margin: 2px 0 0 2px;
+                                }
+                                
+                                .mobile_pop_info {
+                                    margin: 0 10px 0 86px;
+                                    min-height: 70px;
+                                }
+                                
+                                .mobile_pop_tit {
+                                    font-size: 12px;
+                                    line-height: 17px;
+                                    color: #666 !important;
+                                }
+                                
+                                .mobile_pop_tit a {
+                                    color: #666 !important;
+                                }
+                                
+                                .mobile_pop_value {
+                                    margin: 3px 0;
+                                    line-height: 14px;
+                                    color: #F10214;
+                                }
+                                
+                                .mobile_pop_device {
+                                    overflow: hidden;
+                                    height: 25px;
+                                }
+                                
+                                .mobile_pop_device_lk {
+                                    overflow: hidden;
+                                    float: left;
+                                    margin-right: 2px;
+                                    width: 25px;
+                                    height: 25px;
+                                    text-indent: -999px;
+                                }
+                                
+                                .mobile_pop_device_ios {
+                                    background-position: 0 0;
+                                }
+                                
+                                .mobile_pop_device_and {
+                                    background-position: 0 -26px;
+                                }
+                                
+                                .mobile_pop_device_pad {
+                                    background-position: 0 -52px;
+                                }
+                                
+                                @media only screen and ( -webkit-min-device-pixel-ratio:1.5),
+                                only screen and ( min--moz-device-pixel-ratio:1.5),
+                                only screen and ( -o-min-device-pixel-ratio:3/2),
+                                only screen and ( min-device-pixel-ratio:1.5) {
+                                    .mobile_pop_device_lk {
+                                        background-image: url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_mobile@2x.png);
+                                        background-size: 25px 77px;
+                                    }
+                                }
+                            </style>
+                            <div class="mobile_pop_item">
+                                <div class="mobile_pop_qrcode mobile_pop_qrcode_1"><img src="//img10.360buyimg.com/da/jfs/t7525/251/1899038567/28110/d5764256/59a51bf6Nb8e478cc.png"></div>
+                                <div class="mobile_pop_info">
+                                    <h5 class="mobile_pop_tit"><a href="//app.jd.com/" target="_blank">手机京东</a></h5>
+                                    <p class="mobile_pop_value">新人专享大礼包</p>
+                                    <p class="mobile_pop_device"> <a class="mobile_pop_device_lk mobile_pop_device_ios" href="https://itunes.apple.com/cn/app/id414245413" target="_blank">APP Store</a> <a class="mobile_pop_device_lk mobile_pop_device_and" href="https://storage.jd.com/jdmobile/JDMALL-PC2.apk"
+                                            target="_blank">安卓市场</a> <a class="mobile_pop_device_lk mobile_pop_device_pad" href="https://itunes.apple.com/cn/app/jing-dong-hd/id434374726" target="_blank">APP Store</a> </p>
+                                </div>
+                            </div>
+                            <div class="mobile_pop_item">
+                                <div class="mobile_pop_qrcode mobile_pop_qrcode_2"><img src="//img12.360buyimg.com/da/jfs/t1/40259/2/2273/11346/5cbff703E37eb3991/611d3e68ed71bf22.jpg"></div>
+                                <div class="mobile_pop_info">
+                                    <h5 class="mobile_pop_tit">关注京东微信</h5>
+                                    <p class="mobile_pop_value">微信扫一扫关注<br>京东服务号订阅<br>更多促销优惠福利</p>
+                                </div>
+                            </div>
+                            <div class="mobile_pop_item">
+                                <div class="mobile_pop_qrcode mobile_pop_qrcode_3"><img src="//img13.360buyimg.com/da/jfs/t4018/193/1415357059/15408/876d5d6e/5874a555Ne8192324.jpg"></div>
+                                <div class="mobile_pop_info">
+                                    <h5 class="mobile_pop_tit"><a href="https://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank">京东金融客户端</a></h5>
+                                    <p class="mobile_pop_value">新人专享大礼包</p>
+                                    <p class="mobile_pop_device"> <a class="mobile_pop_device_lk mobile_pop_device_ios" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong-hui-li/id895682747?mt=8" target="_blank">APP Store</a> <a class="mobile_pop_device_lk mobile_pop_device_and"
+                                            href="http://211.151.9.66/downapp/jrapp_jr188.apk" target="_blank">安卓市场</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul> <span class="clr"></span>
+
+        </div>
+    </div>
+
+    <div id="o-header-2013">
+        <a id="chaoshi_top_lk_28" class="chaoshi_top_lk grid_c1" href="//pro.jd.com/mall/active/3MDiz1tbRK6dsMsvQELJGj6SM5Ud/index.html" target="_blank" clstag="channel|keycount|3054|topBanner28_0" style="background: transparent;" title=""><img src="//img10.360buyimg.com//babel/jfs/t1/46002/30/2245/44562/5d00ec4eE495609ec/0d56f0d225de2e08.png!q80.webp" data-lazy-img="done" width="1190" height="80">
+            <div class="chaoshi_top_close"></div>
+        </a>
+        <div id="header-2013" style="display:none;"></div>
+    </div>
+    <div class="w">
+        <div id="logo-2014"> <a href="//chaoshi.jd.com" class="logo">
+                京东超市
+            </a >
+
+            <div class="dropdown logo_dropdown clearfix">
+                <div class="fl dropdown_locate">
+                </div>
+                <ul class="fl dropdown_wrap" clstag="h|keycount|2016|01a">
+                    <li id="ttbar-mycity" class="dropdown_box">			<div class="dt cw-icon ui-areamini-text-wrap" style="">				<i class="iconfont"></i>				<span class="ui-areamini-text" data-id="7" title="河南">河南</span> 			</div>			<div class="dd dorpdown-layer">				<div class="dd-spacer"></div>				<div class="ui-areamini-content-wrap" style="left: auto;"> 					<div class="ui-areamini-content"><div class="ui-areamini-content-list clearfix"><div class="item"><a data-id="1" href="javascript:void(0)">北京</a></div>
+        <div class="item"><a data-id="2" href="javascript:void(0)">上海</a></div>
+        <div class="item"><a data-id="3" href="javascript:void(0)">天津</a></div>
+        <div class="item"><a data-id="4" href="javascript:void(0)">重庆</a></div>
+        <div class="item"><a data-id="5" href="javascript:void(0)">河北</a></div>
+        <div class="item"><a data-id="6" href="javascript:void(0)">山西</a></div>
+        <div class="item"><a data-id="7" href="javascript:void(0)" class="selected">河南</a></div>
+        <div class="item"><a data-id="8" href="javascript:void(0)">辽宁</a></div>
+        <div class="item"><a data-id="9" href="javascript:void(0)">吉林</a></div>
+        <div class="item"><a data-id="10" href="javascript:void(0)">黑龙江</a></div>
+        <div class="item"><a data-id="11" href="javascript:void(0)">内蒙古</a></div>
+        <div class="item"><a data-id="12" href="javascript:void(0)">江苏</a></div>
+        <div class="item"><a data-id="13" href="javascript:void(0)">山东</a></div>
+        <div class="item"><a data-id="14" href="javascript:void(0)">安徽</a></div>
+        <div class="item"><a data-id="15" href="javascript:void(0)">浙江</a></div>
+        <div class="item"><a data-id="16" href="javascript:void(0)">福建</a></div>
+        <div class="item"><a data-id="17" href="javascript:void(0)">湖北</a></div>
+        <div class="item"><a data-id="18" href="javascript:void(0)">湖南</a></div>
+        <div class="item"><a data-id="19" href="javascript:void(0)">广东</a></div>
+        <div class="item"><a data-id="20" href="javascript:void(0)">广西</a></div>
+        <div class="item"><a data-id="21" href="javascript:void(0)">江西</a></div>
+        <div class="item"><a data-id="22" href="javascript:void(0)">四川</a></div>
+        <div class="item"><a data-id="23" href="javascript:void(0)">海南</a></div>
+        <div class="item"><a data-id="24" href="javascript:void(0)">贵州</a></div>
+        <div class="item"><a data-id="25" href="javascript:void(0)">云南</a></div>
+        <div class="item"><a data-id="26" href="javascript:void(0)">西藏</a></div>
+        <div class="item"><a data-id="27" href="javascript:void(0)">陕西</a></div>
+        <div class="item"><a data-id="28" href="javascript:void(0)">甘肃</a></div>
+        <div class="item"><a data-id="29" href="javascript:void(0)">青海</a></div>
+        <div class="item"><a data-id="30" href="javascript:void(0)">宁夏</a></div>
+        <div class="item"><a data-id="31" href="javascript:void(0)">新疆</a></div>
+        <div class="item"><a data-id="52993" href="javascript:void(0)">港澳</a></div>
+        <div class="item"><a data-id="32" href="javascript:void(0)">台湾</a></div>
+        <div class="item"><a data-id="84" href="javascript:void(0)">钓鱼岛</a></div>
+        <div class="item"><a data-id="53283" href="javascript:void(0)">海外</a></div>
+    </div>
+    </div>
+    </div>
+    <div class="areamini_inter">
+        <div class="areamini_inter_split"></div>
+        <p class="areamini_inter_desc">Available Sites</p>
+        <ul class="areamini_inter_list">
+            <li class="areamini_inter_item">
+                <a class="areamini_inter_lk" href="//www.joybuy.com/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0101">
+                    <div class="areamini_inter_ico areamini_inter_ico_global"></div>
+                    <div class="areamini_inter_name">Global Site</div>
+                </a>
+            </li>
+            <li class="areamini_inter_item">
+                <a class="areamini_inter_lk" href="//www.jd.ru/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0102">
+                    <div class="areamini_inter_ico areamini_inter_ico_russia"></div>
+                    <div class="areamini_inter_name">Сайт России</div>
+                </a>
+            </li>
+            <li class="areamini_inter_item">
+                <a class="areamini_inter_lk" href="//www.jd.id/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0103">
+                    <div class="areamini_inter_ico areamini_inter_ico_indonesia"></div>
+                    <div class="areamini_inter_name">Situs Indonesia</div>
+                </a>
+            </li>
+            <li class="areamini_inter_item">
+                <a class="areamini_inter_lk" href="//www.joybuy.es/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0103">
+                    <div class="areamini_inter_ico areamini_inter_ico_spain"></div>
+                    <div class="areamini_inter_name">Sitio de España</div>
+                </a>
+            </li>
+            <li class="areamini_inter_item">
+                <a class="areamini_inter_lk" href="//www.jd.co.th/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0105">
+                    <div class="areamini_inter_ico areamini_inter_ico_thailand"></div>
+                    <div class="areamini_inter_name">เว็บไซต์ประเทศไทย</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+
+
+
+    </div>
+    <div id="search-2014">
+        <ul id="shelper" class="hide">
+        </ul>
+        <div class="form">
+            <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" value="满199减100" />
+            <button onclick="search('key');return false;" class="button cw-icon">
+                    <i></i> 搜索
+                </button>
+        </div>
+    </div>
+
+    <div id="settleup-2014" class="dorpdown">
+        <div class="cw-icon">
+            <i class="ci-left">
+            </i>
+            <i class="ci-right">
+            &gt;
+            </i><i class="ci-count" id="shopping-amount">0</i>
+            <a target="_blank" href="//cart.jd.com/cart.action">
+                我的购物车
+            </a>
+        </div>
+        <div class="dorpdown-layer">
+            <div class="spacer"></div>
+            <div class="prompt">
+                <div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="headerqrcode" style="display: block;" id="J_headerqrcode"><a href="javascript:;" class="headerqrcode_lk"><i class="headerqrcode_ico"></i><span class="headerqrcode_txt">扫码享受优惠</span></a>
+        <div class="headerqrcode_qc">
+            <div class="headerqrcode_qcimg"><img data-src="//qrimg.jd.com/https%3A%2F%2Fpro.m.jd.com%2Fmall%2Factive%2F2hqsQcyM5bEUVSStkN3BwrBHqVLd%2Findex.html-110-1-4-0.png?v=1" src="//qrimg.jd.com/https%3A%2F%2Fpro.m.jd.com%2Fmall%2Factive%2F2hqsQcyM5bEUVSStkN3BwrBHqVLd%2Findex.html-110-1-4-0.png?v=1"></div>
+            <div class="headerqrcode_arrow"><i class="headerqrcode_arrow_bd"></i><i class="headerqrcode_arrow_bg"></i></div>
+        </div>
+    </div>
+
+    <div id="hotwords"><a data-id="9963" data-position-id="2" href="//search.jd.com/Search?keyword=%E9%A3%9F%E5%93%81&amp;enc=utf-8&amp;spm=2.1.1" target="_blank">食品</a><a data-id="9964" data-position-id="3" href="//search.jd.com/Search?keyword=%E6%AF%8D%E5%A9%B4&amp;enc=utf-8&amp;spm=2.1.1"
+            target="_blank">母婴</a><a data-id="9965" data-position-id="4" href="//search.jd.com/Search?keyword=%E4%B8%AA%E6%8A%A4&amp;enc=utf-8&amp;spm=2.1.1" target="_blank">个护</a><a data-id="10211" data-position-id="5" href="//pro.jd.com/mall/active/FM6iVKyLSRtJrjpBkw87smoX43u/index.html"
+            target="_blank">精酿啤酒</a><a data-id="10216" data-position-id="6" href="//mall.jd.com/index-1000111501.html" target="_blank">茅台</a></div>
+    <span class="clr">
+        </span>
+    </div>
+    <!-- S 主体内容 -->
+    <div class="mod_container">
+
+        <div class="chaoshi_fs" id="chaoshi_fs_1" data-id="chaoshi_fs_1" data-async="true" data-tpl="chaoshi_fs_tpl">
+            <div class="chaoshi_menu">
+                <div class="grid_c1 clearfix">
+                    <ul class="chaoshi_menu_list clearfix fl">
+                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','超市首页','1');"><i class="chaoshi_menu_list_split"></i><a href="//chaoshi.jd.com" clstag="channel|keycount|3054|h_words1_1" target="_blank" class="chaoshi_menu_list_link chaoshi_menu_list_link_on" title="超市首页">超市首页</a></li>
+                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','超值量贩','2');"><i class="chaoshi_menu_list_split"></i><a href="//chaoshi.jd.com/liangfan" clstag="channel|keycount|3054|h_words1_2" target="_blank" class="chaoshi_menu_list_link" title="超值量贩">超值量贩</a></li>
+                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','京东生鲜','3');"><i class="chaoshi_menu_list_split"></i><a href="//fresh.jd.com/" clstag="channel|keycount|3054|h_words1_3" target="_blank" class="chaoshi_menu_list_link" title="京东生鲜">京东生鲜</a></li>
+                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','品牌特卖','4');"><i class="chaoshi_menu_list_split"></i><a href="//chaoshi.jd.com/pinpai" clstag="channel|keycount|3054|h_words1_4" target="_blank" class="chaoshi_menu_list_link" title="品牌特卖">品牌特卖</a></li>
+                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','品质进口','5');"><i class="chaoshi_menu_list_split"></i><a href="//channel.jd.com/1320-5019.html" clstag="channel|keycount|3054|h_words1_5" target="_blank" class="chaoshi_menu_list_link" title="品质进口">品质进口</a></li>
+                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','山姆会员店','6');"><i class="chaoshi_menu_list_split"></i><a href="//samsclub.jd.com/" clstag="channel|keycount|3054|h_words1_6" target="_blank" class="chaoshi_menu_list_link" title="山姆会员店">山姆会员店</a></li>
+                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','PLUS专场','7');"><i class="chaoshi_menu_list_split"></i><a href="//sale.jd.com/act/f3Xynl42RA5.html" clstag="channel|keycount|3054|h_words1_7" target="_blank" class="chaoshi_menu_list_link" title="PLUS专场">PLUS专场</a></li>
+                    </ul>
+                    <ul class="chaoshi_menu_ad clearfix fr">
+                        <li class="chaoshi_menu_ad_item fl chaoshi_menu_ad_item_first"><i class="mod_png chaoshi_menu_ad_icon" style="background-image: url(//img11.360buyimg.com/cms/jfs/t5176/120/2413062618/773/fafe7aa3/591aa606Nfe17fd41.png);"></i><span class="chaoshi_menu_ad_txt">满99免运费</span></li>
+                        <li class="chaoshi_menu_ad_item fl"><i class="mod_png chaoshi_menu_ad_icon" style="background-image: url(//img12.360buyimg.com/cms/jfs/t5464/344/2422426436/707/47720902/591aa62aN516cd9c6.png);"></i><span class="chaoshi_menu_ad_txt">100%渠道保证</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chaoshi_banner_wrapper clearfix grid_c1">
+                <div class="chaoshi_banner_inner">
+                    <div class="chaoshi_nav">
+                        <div class="chaoshi_nav_header">京东超市频道分类</div>
+                        <!-- 接口 接口 -->
+                        <div class="chaoshi_nav_body">
+                            <div class="item">
+                                <div class="item_header">
+                                    <div class="item_header_decoration"></div>
+                                    <h3 class="item_header_title">食品饮料<i class="item_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="item_header_sublinks">
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                    </p>
+                                </div>
+                                <div class="item_body">
+                                    <div class="" item_body_wrapper clearfix>
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">进口食品</div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">休闲食品</div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nan_recommend"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_header">
+                                    <div class="item_decoration"></div>
+                                    <h3 class="item_header_title">食品饮料<i class="item_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="item_header_sublinks">
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                    </p>
+                                </div>
+                                <div class="item_body norecommend">
+                                    <div class="" item_body_wrapper clearfix>
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">进口食品</div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">休闲食品</div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nan_recommend"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_header">
+                                    <div class="item_decoration"></div>
+                                    <h3 class="item_header_title">食品饮料<i class="item_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="item_header_sublinks">
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                    </p>
+                                </div>
+                                <div class="item_body norecommend">
+                                    <div class="" item_body_wrapper clearfix>
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">进口食品</div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">休闲食品</div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nan_recommend"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_header">
+                                    <div class="item_decoration"></div>
+                                    <h3 class="item_header_title">食品饮料<i class="item_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="item_header_sublinks">
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                    </p>
+                                </div>
+                                <div class="item_body norecommend">
+                                    <div class="" item_body_wrapper clearfix>
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">进口食品</div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">休闲食品</div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nan_recommend"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_header">
+                                    <div class="item_decoration"></div>
+                                    <h3 class="item_header_title">食品饮料<i class="item_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="item_header_sublinks">
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                    </p>
+                                </div>
+                                <div class="item_body norecommend">
+                                    <div class="" item_body_wrapper clearfix>
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">进口食品</div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">休闲食品</div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nan_recommend"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_header">
+                                    <div class="item_decoration"></div>
+                                    <h3 class="item_header_title">食品饮料<i class="item_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="item_header_sublinks">
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                    </p>
+                                </div>
+                                <div class="item_body norecommend">
+                                    <div class="" item_body_wrapper clearfix>
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">进口食品</div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">休闲食品</div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nan_recommend"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_header">
+                                    <div class="item_decoration"></div>
+                                    <h3 class="item_header_title">食品饮料<i class="item_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="item_header_sublinks">
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                        <a href="#">牛奶</a>
+                                    </p>
+                                </div>
+                                <div class="item_body norecommend">
+                                    <div class="" item_body_wrapper clearfix>
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">进口食品</div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">休闲食品</div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nan_recommend"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="chaoshi_banner_mid fl">
+                        <div class="chaoshi_carousel">
+                            <ul class="chaoshi_carousel_main">
+                                <li class="chaoshi_carousel_item chaoshi_carousel_item_on" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner','','1');" style="opacity: 1; z-index: 5; position: absolute;">
+                                    <a href="//mall.jd.com/index-1000003039.html" clstag="channel|keycount|3054|BANNERCAROUSEL1_1" target="_blank" class="chaoshi_carousel_link"><img src="//img10.360buyimg.com//babel/jfs/t1/61480/2/2128/146727/5d07788eEb9503ea9/22be650b435b6702.jpg!q80.webp" data-lazy-img="done" class="chaoshi_carousel_img" title="" alt=""></a>
+                                </li>
+                                <li class="chaoshi_carousel_item" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner','','2');" style="opacity: 0; z-index: 0; position: absolute;">
+                                    <a href="//pro.jd.com/mall/active/g5ZY54ECKtaoYLkBvXcakpR7vCC/index.html" clstag="channel|keycount|3054|BANNERCAROUSEL1_2" target="_blank" class="chaoshi_carousel_link"><img src="//img11.360buyimg.com//babel/jfs/t1/74152/4/2258/127935/5d0897d5E2c845461/a6e9190935ffc0cf.jpg!q80.webp" data-lazy-img="done" class="chaoshi_carousel_img" title="" alt=""></a>
+                                </li>
+                                <li class="chaoshi_carousel_item" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner','','3');" style="opacity: 0; z-index: 0; position: absolute;">
+                                    <a href="//pro.jd.com/mall/active/42WD7JFig3ZyKAhuGdUNBWDhuZZr/index.html" clstag="channel|keycount|3054|BANNERCAROUSEL1_3" target="_blank" class="chaoshi_carousel_link"><img src="//img12.360buyimg.com//babel/jfs/t1/44549/34/3256/196900/5d089d4fEd15211c6/f6a8e2fe5c1e41f2.jpg!q80.webp" data-lazy-img="done" class="chaoshi_carousel_img" title="" alt=""></a>
+                                </li>
+                                <li class="chaoshi_carousel_item" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner','','4');" style="opacity: 0; z-index: 0; position: absolute;">
+                                    <a href="//pro.jd.com/mall/active/2eFfCgZbsJVAkYKVeUW8DUJ7QiZf/index.html" clstag="channel|keycount|3054|BANNERCAROUSEL1_4" target="_blank" class="chaoshi_carousel_link"><img src="//img13.360buyimg.com//babel/jfs/t1/47337/4/2754/98180/5d08e1b5Ec3e8b66a/d947e0521d90cab3.jpg!q80.webp" data-lazy-img="done" class="chaoshi_carousel_img" title="" alt=""></a>
+                                </li>
+                                <li class="chaoshi_carousel_item" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner','','5');" style="opacity: 0; z-index: 0; position: absolute;">
+                                    <a href="//pro.jd.com/mall/active/4G5xap7fUEzJkqP4ZqmpEc7xtV7v/index.html" clstag="channel|keycount|3054|BANNERCAROUSEL1_5" target="_blank" class="chaoshi_carousel_link"><img src="//img14.360buyimg.com//babel/jfs/t1/60838/25/2493/153332/5d0ca622E965fb66d/366e060d787882c5.jpg!q80.webp" data-lazy-img="done" class="chaoshi_carousel_img" title="" alt=""></a>
+                                </li>
+                                <li class="chaoshi_carousel_item" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner','','6');" style="opacity: 0; z-index: 0; position: absolute;">
+                                    <a href="//pro.jd.com/mall/active/3qkFYN8PDL9eiizpHurGPxrSWKXv/index.html" clstag="channel|keycount|3054|BANNERCAROUSEL1_6" target="_blank" class="chaoshi_carousel_link"><img src="//img10.360buyimg.com//babel/jfs/t1/56467/5/2963/46616/5d0cb0adEe049bfd0/a14027b7c594a8c5.jpg!q80.webp" data-lazy-img="done" class="chaoshi_carousel_img" title="" alt=""></a>
+                                </li>
+                            </ul>
+                            <div class="chaoshi_carousel_extra">
+                                <div class="chaoshi_carousel_btns"><a href="javascript:void(0)" clstag="channel|keycount|3054|BANNERCAROUSELBTN1_1" class="chaoshi_carousel_prev">&lt;</a><a href="javascript:void(0)" clstag="channel|keycount|3054|BANNERCAROUSELBTN1_2" class="chaoshi_carousel_next">&gt;</a></div>
+                                <div class="chaoshi_carousel_nav clearfix">
+                                    <a href="javascript:void(0)" class="chaoshi_carousel_nav_btn chaoshi_carousel_nav_btn_on" style="width: 129.167px;"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_carousel_nav_btn chaoshi_carousel_nav_btn_last" style="width: 129.167px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chaoshi_bottom clearfix">
+                            <li class="chaoshi_bottom_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','','1');">
+                                <a href="//mall.jd.com/index-1000083185.htm" clstag="channel|keycount|3054|BANNERBOTTOMRECOMMEND1_1" class="chaoshi_bottom_link" target="_blank"><img class="chaoshi_bottom_img" src="//img10.360buyimg.com//babel/jfs/t1/57369/33/998/37101/5cebc1d3E0dc9549c/a7cd8d8e36797269.jpg!q80.webp" data-lazy-img="done" alt="" title=""></a>
+                            </li>
+                            <li class="chaoshi_bottom_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','','2');">
+                                <a href="//pro.jd.com/mall/active/3igrFocyoRAEcJ7QPFc6dvAFT4CK/index.html" clstag="channel|keycount|3054|BANNERBOTTOMRECOMMEND1_2" class="chaoshi_bottom_link" target="_blank"><img class="chaoshi_bottom_img" src="//img10.360buyimg.com//babel/jfs/t1/76214/25/1195/43648/5cf7202dE0ae66b11/620d7ae216ad23de.jpg!q80.webp" data-lazy-img="done" alt="" title=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="chaoshi_right fr">
+                        <div class="chaoshi_coupon">
+                            <p class="chaoshi_right_tt">每日领券</p>
+                            <p class="chaoshi_right_tip">总有你想要的</p>
+                            <div class="chaoshi_coupon_bd">
+                                <a class="chaoshi_coupon_info" href="//coupon.jd.com/ilink/couponActiveFront/front_index.action?key=fa22587311c344278327acdd86364bdf&amp;roleId=20171222&amp;to=https://pro.jd.com/mall/active/2Chws4RfDRHZmRpfA2YCFiSxHLQ2/index.html" target="_blank" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','优惠券','3');">
+                                    <p class="chaoshi_coupon_info_num1">¥<em>5</em></p>
+                                    <p class="chaoshi_coupon_info_num2">满110可用</p>
+                                    <p class="chaoshi_coupon_info_tip">仅可购买部分牛奶麦片商品</p>
+                                </a><a class="chaoshi_coupon_more" href="https://a.jd.com/" target="_blank" clstag="channel|keycount|3054|couponMore1_10" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','更多好券','4');">更多好券</a></div>
+                        </div>
+                        <div class="chaoshi_handy">
+                            <h4 class="chaoshi_right_tt"></h4>
+                            <p class="chaoshi_right_tip">小物件 大用途</p>
+                            <div class="chaoshi_handy_carousel">
+                                <ul class="chaoshi_handy_carousel_main">
+                                    <li class="chaoshi_handy_carousel_item" style="opacity: 0; z-index: 0; position: absolute;">
+                                        <a href="//item.jd.com/965012.html" clstag="channel|keycount|3054|handy1_1" target="_blank" class="chaoshi_handy_carousel_link" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','更多好券','6');"><img src="//img10.360buyimg.com/jdcms/s200x200_jfs/t3808/307/102665948/123584/298ee860/58075ab6N4c20a87f.jpg!q80.webp" data-lazy-img="done" class="chaoshi_handy_carousel_img" title="南孚(NANFU)LR6AA聚能环5号碱性电池干电池12粒挂卡装/儿童玩具/血压计/血糖仪/遥控器/挂钟/键盘电池"
+                                                alt="南孚(NANFU)LR6AA聚能环5号碱性电池干电池12粒挂卡装/儿童玩具/血压计/血糖仪/遥控器/挂钟/键盘电池"></a><a class="chaoshi_handy_carousel_enter" href="false" clstag="channel|keycount|3054|handyEnter1_1" target="_blank" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','进入','5');">进入&gt;</a></li>
+                                    <li class="chaoshi_handy_carousel_item" style="opacity: 0; z-index: 0; position: absolute;">
+                                        <a href="//item.jd.com/3055311.html" clstag="channel|keycount|3054|handy1_2" target="_blank" class="chaoshi_handy_carousel_link" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','更多好券','7');"><img src="//img11.360buyimg.com/jdcms/s200x200_jfs/t3154/4/348474326/105192/77dc7f92/57b2c8e6Nba6d1c96.jpg!q80.webp" data-lazy-img="done" class="chaoshi_handy_carousel_img" title="【京东超市】忍者（storc）指甲刀套装 指甲剪不锈钢甲沟炎修脚刀套装生日礼物圣诞节礼物zj12"
+                                                alt="【京东超市】忍者（storc）指甲刀套装 指甲剪不锈钢甲沟炎修脚刀套装生日礼物圣诞节礼物zj12"></a><a class="chaoshi_handy_carousel_enter" href="false" clstag="channel|keycount|3054|handyEnter1_2" target="_blank" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','进入','5');">进入&gt;</a></li>
+                                    <li class="chaoshi_handy_carousel_item on" style="opacity: 1; z-index: 5; position: absolute;">
+                                        <a href="//item.jd.com/1798608.html" clstag="channel|keycount|3054|handy1_3" target="_blank" class="chaoshi_handy_carousel_link" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','更多好券','8');"><img src="//img12.360buyimg.com/jdcms/s200x200_jfs/t4144/58/3371856272/138300/49280feb/58df5c4bN1fe29b13.jpg!q80.webp" data-lazy-img="done" class="chaoshi_handy_carousel_img" title="四万公里 旅游出差折叠晾衣架 便携防滑魔术衣架 SW2010 5种颜色随机配送"
+                                                alt="四万公里 旅游出差折叠晾衣架 便携防滑魔术衣架 SW2010 5种颜色随机配送"></a><a class="chaoshi_handy_carousel_enter" href="false" clstag="channel|keycount|3054|handyEnter1_3" target="_blank" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','进入','5');">进入&gt;</a></li>
+                                    <li class="chaoshi_handy_carousel_item" style="opacity: 0; z-index: 0; position: absolute;">
+                                        <a href="//item.jd.com/1965153.html" clstag="channel|keycount|3054|handy1_4" target="_blank" class="chaoshi_handy_carousel_link" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','更多好券','9');"><img src="//img13.360buyimg.com/jdcms/s200x200_jfs/t3193/128/570521359/167034/ac7c131f/57ba73c2Nc58281d1.jpg!q80.webp" data-lazy-img="done" class="chaoshi_handy_carousel_img" title="四万公里 一次性毛巾 洗脸柔巾 洁面巾 一次性柔巾美容巾纯棉旅行面巾 10件管装 SW8006"
+                                                alt="四万公里 一次性毛巾 洗脸柔巾 洁面巾 一次性柔巾美容巾纯棉旅行面巾 10件管装 SW8006"></a><a class="chaoshi_handy_carousel_enter" href="false" clstag="channel|keycount|3054|handyEnter1_4" target="_blank" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','进入','5');">进入&gt;</a></li>
+                                    <li class="chaoshi_handy_carousel_item" style="opacity: 0; z-index: 0; position: absolute;">
+                                        <a href="//item.jd.com/2145773.html" clstag="channel|keycount|3054|handy1_5" target="_blank" class="chaoshi_handy_carousel_link" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','更多好券','10');"><img src="//img14.360buyimg.com/jdcms/s200x200_jfs/t2209/275/1969934372/316228/f63249e8/568f7826Nac675c37.jpg!q80.webp" data-lazy-img="done" class="chaoshi_handy_carousel_img" title="四万公里 手机防水袋潜水套 可触屏加大密封通用 旅游 水下可拍照 带挂绳 蓝色 SW4001"
+                                                alt="四万公里 手机防水袋潜水套 可触屏加大密封通用 旅游 水下可拍照 带挂绳 蓝色 SW4001"></a><a class="chaoshi_handy_carousel_enter" href="false" clstag="channel|keycount|3054|handyEnter1_5" target="_blank" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','banner_one','进入','5');">进入&gt;</a></li>
+                                </ul>
+                                <div class="chaoshi_handy_carousel_nav clearfix">
+                                    <a href="javascript:void(0)" class="chaoshi_handy_carousel_nav_btn"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_handy_carousel_nav_btn"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_handy_carousel_nav_btn on"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_handy_carousel_nav_btn"></a>
+                                    <a href="javascript:void(0)" class="chaoshi_handy_carousel_nav_btn"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="o2data-lazyload chaoshi_seckill" id="chaoshi_seckill_2" data-id="chaoshi_seckill_2" data-tpl="chaoshi_seckill_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_discount grid_c1" id="chaoshi_discount_3" data-id="chaoshi_discount_3" data-async="true" data-elevator="true" data-tpl="chaoshi_discount_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_rec" id="chaoshi_rec_4" data-async="true" data-id="chaoshi_rec_4" data-tpl="chaoshi_rec_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_brand grid_c1" id="chaoshi_brand_5" data-id="chaoshi_brand_5" data-async="true" data-elevator="true" data-tpl="chaoshi_brand_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_buy grid_c1 chaoshi_mod" id="chaoshi_buy_6" data-id="chaoshi_buy_6" data-async="true" data-elevator="true" data-tpl="chaoshi_buy_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_7" data-id="chaoshi_category_7" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_8" data-id="chaoshi_category_8" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_9" data-id="chaoshi_category_9" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_10" data-id="chaoshi_category_10" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_11" data-id="chaoshi_category_11" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_12" data-id="chaoshi_category_12" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_13" data-id="chaoshi_category_13" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_14" data-id="chaoshi_category_14" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_15" data-id="chaoshi_category_15" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_16" data-id="chaoshi_category_16" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_17" data-id="chaoshi_category_17" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_18" data-id="chaoshi_category_18" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_19" data-id="chaoshi_category_19" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_20" data-id="chaoshi_category_20" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_21" data-id="chaoshi_category_21" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_22" data-id="chaoshi_category_22" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_23" data-id="chaoshi_category_23" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_24" data-id="chaoshi_category_24" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_category grid_c1" id="chaoshi_category_25" data-id="chaoshi_category_25" data-async="true" data-elevator="true" data-tpl="chaoshi_category_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_like grid_c1" id="chaoshi_like_26" data-id="chaoshi_like_26" data-elevator="true" data-async="true" data-tpl="chaoshi_like_tpl">
+
+        </div>
+
+
+        <div class="o2data-lazyload chaoshi_lift" id="chaoshi_lift_27" data-id="chaoshi_lift_27" data-forcerender="true" data-async="true" data-tpl="chaoshi_lift_tpl">
+
+        </div>
+        <div class="o2data-lazyload chaoshi_top" id="chaoshi_top_28" data-id="chaoshi_top_28" data-async="true" data-tpl="chaoshi_top_tpl">
+
+        </div>
+
+        <div class="o2data-lazyload chaoshi_pop" id="chaoshi_pop_29" data-id="chaoshi_pop_29" data-forcerender="true" data-async="true" data-tpl="chaoshi_pop_tpl">
+
+        </div>
+        <div class="o2data-lazyload headerqrcode" id="headerqrcode_30" data-forcerender="true" data-id="headerqrcode_30" data-tpl="//static.360buyimg.com/mtd/pc/cms/floors/headerqrcode_tpl.min.js">
+
+        </div>
+
+    </div>
+    <!-- E 主体内容 -->
+    <div class="o2data-lazyload" id="cmsfooter" data-tpl="//static.360buyimg.com/mtd/pc/cms/js/cmsfooter_tpl.min.js" data-script="seajs.use('//misc.360buyimg.com/??jdf/1.0.0/unit/global-footer/1.0.0/global-footer.css,jdf/1.0.0/unit/service/1.0.0/service.css')"></div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
