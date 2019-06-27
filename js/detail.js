@@ -1,4 +1,12 @@
  $(function() {
+     var name = getCookie("name");
+
+     //欢迎
+     if (location.search.substring(1).split("=")[1] != undefined) {
+         $(".fore1").css("display", "none");
+         $("#hello").css("display", "block");
+         $("#hello span").html(name)
+     }
 
      function getParam(paramName) {
          paramValue = "", isFound = !1;
@@ -9,13 +17,21 @@
          return paramValue == "" && (paramValue = null), paramValue
      }
      var id = getParam('id');
-     var token = getParam('token')
-     console.log(id)
-     console.log(token)
+     var token = getParam('token');
+
+     //调转首页判断
+     if (location.search.substring(1).split("=")[1] != "null") {
+         $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html?token=' + token);
+         $(".logo").attr("href", 'http://localhost:8080/index.html?token=' + token);
+     } else {
+         $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html');
+         $(".logo").attr("href", 'http://localhost:8080/index.html');
+     }
+
+
      $.get("http://47.104.244.134:8080/goodsbyid.do", {
          id: id,
      }).done(data => {
-         console.log(data)
          var str = `
             <img src='${data.picurl}'/>
          `;
@@ -31,18 +47,53 @@
          $(".simg").append(str);
          $(".detail").append(str1);
          $(".bimg").append(str)
+
+         //+-
+         $(".jia").on("click", function() {
+             if ($(".num").val() === "") {
+                 $(".num").val(1)
+             } else {
+                 $(".num").val(parseInt($(".num").val()) + 1)
+             }
+         })
+         $(".jian").on("click", function() {
+                 if ($(".num").val() === "") {
+                     $(".num").val(1)
+                 } else {
+                     $(".num").val(parseInt($(".num").val()) - 1)
+                 }
+                 if ($(".num").val() <= 1) {
+                     $(".num").val(1);
+                 }
+             })
+             //加入购物车
+         $(".btn").on("click", function() {
+             if (token != "null") {
+                 for (var i = 0; i < $(".num").val(); i++) {
+                     $.get("http://47.104.244.134:8080/cartsave.do", {
+                         gid: id,
+                         token: token,
+                     }).done(data => {
+
+                     })
+                 }
+                 if (i == $(".num").val()) {
+                     console.log(i)
+                     var msg = confirm("你即将添加多件该商品确定吗?")
+                     if (msg) {
+                         window.open('http://localhost:8080/cart.html?token=' + token);
+                     }
+                 }
+             } else {
+                 alert("请登录 即将调转到登录页面")
+                 window.open('http://localhost:8080/login.html');
+             }
+
+         })
+
      })
 
-     //  $(".btn").on("click", function() {
-     //      $.get("http://47.104.244.134:8080/cartsave.do", {
-     //          gid:id, 
-     //token:
-     //      })
-
-     //  })
-
  })
-
 
 
  //放大镜
@@ -51,8 +102,8 @@
          $("#move,.bimg").show(); //鼠标移入放大镜和大图显示
          $(".detail").hide();
          $("#move").mousemove(function(e) {
-             var x = e.clientX - $(this).width() / 2 - $(".img").offset().left;
-             var y = e.clientY - $(this).height() / 2 - $(".img").offset().top;
+             var x = e.pageX - $(this).width() / 2 - $(".img").offset().left;
+             var y = e.pageY - $(this).height() / 2 - $(".img").offset().top;
              //判断小图(上下——左右)边界
              if (x <= 0) {
                  x = 0;
@@ -77,12 +128,19 @@
                  "left": -bx,
                  "top": -by
              });
-
          })
      })
-
      $(".img").mouseout(function() {
          $("#move,.bimg").hide(); //鼠标移出放大镜和大图隐藏
          $(".detail").show();
+     })
+
+     //tab切换
+     $(".tab").find("img").click(function() {
+
+         Index = $(".tab").find("img").index($(this)) + 1;
+
+         $(".simg").find("img").attr("src", "img/" + Index + ".jpg");
+         $(".bimg").find("img").attr("src", "img/" + Index + ".jpg");
      })
  })

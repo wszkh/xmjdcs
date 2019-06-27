@@ -14,12 +14,16 @@
 
         <div class="w">
             <ul class="fl">
-                <li id="ttbar-home"><i class="iconfont"></i><a href="index.html" target="_blank">京东首页</a>
+                <li id="ttbar-home"><i class="iconfont"></i><a href="#" target="_blank">京东首页</a>
                 </li>
             </ul>
             <ul class="fr">
-                <li class="fore1" id="ttbar-login"> <a href="javascript:login();" class="link-login">你好，请登录</a> <a href="regist.html" class="link-regist style-red">免费注册</a>
 
+                <li class="fore1" id="ttbar-login"> <a href="login.html" class="link-login">你好，请登录</a> <a href="regist.html" class="link-regist style-red">免费注册</a>
+                </li>
+                <li id="hello" style="display: none;">
+                    欢迎用户
+                    <span></span> 登录
                 </li>
                 <li class="spacer"></li>
                 <li class="fore2">
@@ -473,13 +477,13 @@
             <div class="chaoshi_menu">
                 <div class="grid_c1 clearfix">
                     <ul class="chaoshi_menu_list clearfix fl">
-                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="index.html" clstag="channel|keycount|3054|h_words1_1" target="_blank" class="chaoshi_menu_list_link chaoshi_menu_list_link_on" title="超市首页">超市首页</a></li>
-                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','超值量贩','2');"><i class="chaoshi_menu_list_split"></i><a href="list.html" clstag="channel|keycount|3054|h_words1_2" target="_blank" class="chaoshi_menu_list_link" title="超值量贩">超值量贩</a></li>
-                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','京东生鲜','3');"><i class="chaoshi_menu_list_split"></i><a href="list.html" clstag="channel|keycount|3054|h_words1_3" target="_blank" class="chaoshi_menu_list_link" title="京东生鲜">京东生鲜</a></li>
-                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','品牌特卖','4');"><i class="chaoshi_menu_list_split"></i><a href="list.html" clstag="channel|keycount|3054|h_words1_4" target="_blank" class="chaoshi_menu_list_link" title="品牌特卖">品牌特卖</a></li>
-                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','品质进口','5');"><i class="chaoshi_menu_list_split"></i><a href="list.html" clstag="channel|keycount|3054|h_words1_5" target="_blank" class="chaoshi_menu_list_link" title="品质进口">品质进口</a></li>
-                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','山姆会员店','6');"><i class="chaoshi_menu_list_split"></i><a href="list.html" clstag="channel|keycount|3054|h_words1_6" target="_blank" class="chaoshi_menu_list_link" title="山姆会员店">山姆会员店</a></li>
-                        <li class="chaoshi_menu_list_item fl" onclick="++pageConfig.chaoshiClickNum;log('chaoshi','h_words','PLUS专场','7');"><i class="chaoshi_menu_list_split"></i><a href="list.html" clstag="channel|keycount|3054|h_words1_7" target="_blank" class="chaoshi_menu_list_link" title="PLUS专场">PLUS专场</a></li>
+                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="index.html" class="chaoshi_menu_list_link chaoshi_menu_list_link_on">超市首页</a></li>
+                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="list.html" class="chaoshi_menu_list_link" title="超值量贩">超值量贩</a></li>
+                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="list.html" class="chaoshi_menu_list_link" title="京东生鲜">京东生鲜</a></li>
+                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="list.html" class="chaoshi_menu_list_link">品牌特卖</a></li>
+                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="list.html" class="chaoshi_menu_list_link">品质进口</a></li>
+                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="list.html" class="chaoshi_menu_list_link">山姆会员店</a></li>
+                        <li class="chaoshi_menu_list_item fl"><i class="chaoshi_menu_list_split"></i><a href="list.html" class="chaoshi_menu_list_link">PLUS专场</a></li>
                     </ul>
                     <ul class="chaoshi_menu_ad clearfix fr">
                         <li class="chaoshi_menu_ad_item fl chaoshi_menu_ad_item_first"><i class="mod_png chaoshi_menu_ad_icon" style="background-image: url(//img11.360buyimg.com/cms/jfs/t5176/120/2413062618/773/fafe7aa3/591aa606Nfe17fd41.png);"></i><span class="chaoshi_menu_ad_txt">满99免运费</span></li>
@@ -1774,7 +1778,8 @@
 
 
 
-    <script src="js/jquery-1.11.0.js "></script>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/cookie.js"></script>
     <script src="js/index.js "></script>
 
 </body>

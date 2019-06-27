@@ -9,30 +9,60 @@ $(function() {
         return paramValue == "" && (paramValue = null), paramValue
     }
     var token = getParam('token');
-
+    //调转首页判断
+    if (location.search.substring(1).split("=")[1] != "null") {
+        $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html?token=' + token);
+        $(".logo").attr("href", 'http://localhost:8080/index.html?token=' + token);
+    } else {
+        $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html');
+        $(".logo").attr("href", 'http://localhost:8080/index.html');
+    }
 
     $.get("http://47.104.244.134:8080/goodsbytid.do", {
         tid: 13,
         page: 10,
         limit: 60
     }).done(data => {
-        console.log(data)
-        console.log(token)
+
 
         var data = data.data;
         var str = "";
         for (var i = 0 in data) {
             str += `
             <li ">
-                <a href="detail.html?token=token&&id=${data[i].id}"><img src = "${data[i].picurl}"></a>
-                <a href="detail.html?token=token&&id=${data[i].id}"><p class="price">${'¥' +data[i].price}</p></a>
-                <a href="detail.html?token=token&&id=${data[i].id}"> <p>${data[i].name}</p></a>
+                <a href="detail.html?token=${token}&&id=${data[i].id}"><img src = "${data[i].picurl}"></a>
+                <a href="detail.html?token=${token}&&id=${data[i].id}"><p class="price">${'¥' +data[i].price}</p></a>
+                <a href="detail.html?token=${token}&&id=${data[i].id}"> <p>${data[i].name}</p></a>
                 <input type="button" class="btn" value="加入购物车">
             </li>
             `;
-            $("#hotwords a").eq(i).html(data[i].name)
+            $("#hotwords a").eq(i).html(data[i].name);
+
         }
         $(".list").html(str);
+        //列表页添加购物车
+        console.log(token)
+        for (let i = 0; i < $(".btn").length; i++) {
+
+            $(".btn").eq(i).click(function() {
+                console.log(data[i].id)
+                if (token != "null") {
+                    $.get("http://47.104.244.134:8080/cartsave.do", {
+                        gid: data[i].id,
+                        token: token,
+                    }).done(data => {
+                        if (data.msg === "成功") {}
+                    })
+                    window.open('http://localhost:8080/cart.html?token=' + token)
+                } else {
+                    window.open('http://localhost:8080/login.html')
+                }
+
+            })
+
+
+        }
+
     })
 
 
@@ -79,4 +109,6 @@ $(function() {
             $(".lists").css("display", "none");
         })
     })
+
+
 })

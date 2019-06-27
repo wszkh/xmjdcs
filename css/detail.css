@@ -95,7 +95,7 @@ u {
 #detail {
     position: relative;
     padding-left: 150px;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .pic {
@@ -115,7 +115,7 @@ u {
 .detail {
     float: left;
     width: 600px;
-    height: 600px;
+    height: 350px;
     margin-left: 50px;
 }
 
@@ -135,6 +135,7 @@ u {
     width: 60px;
     height: 45px;
     padding-left: 20px;
+    margin-top: 50px;
 }
 
 .jia,
@@ -146,12 +147,12 @@ u {
 }
 
 .jia {
-    top: 205px;
+    top: 350px;
     left: 615px;
 }
 
 .jian {
-    top: 230px;
+    top: 375px;
     left: 615px;
 }
 
@@ -160,6 +161,7 @@ u {
     height: 60px;
     color: #f00;
     line-height: 30px;
+    float: none;
 }
 
 .img img {
@@ -205,4 +207,18 @@ u {
     position: absolute;
     left: 0px;
     top: 0px;
+}
+
+.tab {
+    width: 300px;
+    height: 100px;
+}
+
+.tab img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 10px 20px 0 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }

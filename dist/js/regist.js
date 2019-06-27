@@ -1,4 +1,7 @@
 $(function() {
+
+
+
         //模态框
         var timer = setTimeout(function() {
             $("#myModal").addClass("in")
@@ -18,7 +21,6 @@ $(function() {
                 .css("display", "none")
             $(window).attr("location", "index.html")
         })
-
 
 
         $("input").eq(0).on("focus", function() {
@@ -171,8 +173,7 @@ $(function() {
             $.get("http://47.104.244.134:8080/username.do", {
                 username: $("#form-account").val(),
             }).done(data => {
-                console.log(data)
-                console.log($("#form-account").val())
+
                 if (data.msg === "失败") {
                     alert("用户名可用");
                     $('.btn-register').attr('disabled', false);
@@ -219,11 +220,11 @@ $(function() {
             sex: 1
         }).done(data => {
             console.log(data)
+            var name = $("#form-account").val();
             if (data.msg === "成功") {
-
                 alert("注册成功")
                 var timer = setTimeout(function() {
-                    $(window).attr('location', 'login.html');
+                    $(window).attr('location', 'login.html?name=' + name);
                 }, 1000)
             } else {
                 alert("注册失败 请重新填写")

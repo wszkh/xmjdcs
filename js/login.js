@@ -76,12 +76,15 @@ $(".refresh-btn").on("click", function() {
 
 //数据
 $(function() {
+
     $("#log").on("click", function(event) {
+        setCookie("name", $(".username input ").val())
         $.post("http://47.104.244.134:8080/userlogin.do", {
             name: $(".username input").val(),
             password: $(".password input").val(),
         }).done(data => {
-            console.log(data)
+            setCookie("token", data.data.token)
+
             console.log(data.data.token)
             if (data.msg === "OK") {
                 window.open('http://localhost:8080/index.html?token=' + data.data.token)

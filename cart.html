@@ -6,10 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
+    <link rel="icon" href="//www.jd.com/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/cookie.js"></script>
 </head>
 
 <body>
+    <div id="shortcut-2014">
+        <div class="w" style="width:1390px;">
+            <ul class="fl">
+                <li id="ttbar-home"><i class="iconfont"></i><a href="index.html">京东首页</a></li>
+            </ul>
+            <ul class="fr">
+                <li class="fore1" id="ttbar-login"><a href="login.html" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="regist.html" class="link-regist style-red">免费注册</a></li>
+                <li id="hello" style="display: none;">
+                    欢迎用户
+                    <span></span> 登录
+                </li>
+                <li class="spacer"></li>
+                <li class="fore2">
+                    <div class="dt">
+                        <a target="_blank" href="//order.jd.com/center/list.action">我的订单</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore3 dorpdown" id="ttbar-myjd">
+                    <div class="dt cw-icon">
+                        <!-- <i class="ci-right"><s>◇</s></i> -->
+                        <a target="_blank" href="//home.jd.com/">我的京东</a><i class="iconfont"></i>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
 
+                        <div class="dd-inner">
+
+                            <span class="loading">
+                
+                                            </span></div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore4" id="ttbar-member">
+                    <div class="dt">
+                        <a target="_blank" href="//vip.jd.com/">京东会员</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore5 dorpdown" id="ttbar-ent">
+                    <div class="dt cw-icon"> <a target="_blank" href="//b.jd.com/">企业采购</a><i class="iconfont"></i> </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="dd-inner" id="ttbar-ent-main">
+                            <div class="dd-spacer"></div>
+                            <div class="dd-inner"><span class="loading"></span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore6 dorpdown" id="ttbar-serv">
+                    <div class="dt cw-icon">
+                        <!-- <i class="ci-right"><s>◇</s></i> -->
+                        客户服务<i class="iconfont"></i>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="dd-inner"><span class="loading"></span></div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore7 dorpdown" id="ttbar-navs">
+                    <div class="dt cw-icon">
+                        <!-- <i class="ci-right"><s>◇</s></i> -->
+                        网站导航<i class="iconfont"></i>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="dd-inner"><span class="loading"></span></div>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li class="fore8 dorpdown" id="ttbar-apps">
+                    <div class="dt cw-icon">
+                        <!-- <i class="ci-left"></i> -->
+                        <!-- <i class="ci-right"><s>◇</s></i> -->
+                        <a target="_blank" href="//app.jd.com/">手机京东</a>
+                    </div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="dd-inner" id="ttbar-apps-main">
+                            <div class="dd-spacer"></div>
+                            <div class="dd-inner"><span class="loading"></span></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <span class="clr"></span>
+        </div>
+    </div>
+    <div class="lognav">
+        <div id="logo">
+            <a href="index.html" class="logo"><img src="img/logo_201305_b.png" alt="">
+            </a>
+        </div>
+
+        <div id="search-2014">
+            <ul id="shelper" class="hide" style="display: none;"></ul>
+            <div class="form">
+                <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text blurcolor"><span class="photo-search-btn"><form id="search-img-upload" clstag="h|keycount|2016|03d" method="post" action="//search.jd.com/image?op=upload" enctype="multipart/form-data" target="search_upload"><span class="upload-bg"></span>
+                <input type="file" name="file" class="upload-trigger" accept="image/png,image/jpeg,image/jpg"></form>
+                </span>
+                <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="cart-box">
+        <div class="cart-inner">
+            <p id="bt"><span class="quan">全选</span><input type="checkbox" id="all" />
+                <span class="spxx">&nbsp;商品信息</span>
+                <span class="pic">&nbsp;商品图片</span>
+                <span class="spsl">&nbsp;数量</span>
+                <span class="spjg">&nbsp;价格</span>
+                <span class="caozuo">&nbsp;操作</span>
+            </p>
+            <ul id="cartlist">
+
+            </ul>
+            <p id="zj">0</p>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+    <script>
+        $.get("http://47.104.244.134:8080/cartlist.do", {
+                token: token
+            })
+            .done((data) => {
+                console.log(data)
+                var cart = new Cart(data);
+                cart.show("cartlist", "all");
+                cart.getzj();
+            })
+    </script>
 </body>
 
 </html>

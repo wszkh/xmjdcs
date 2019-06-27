@@ -366,7 +366,9 @@ ul {
     float: left;
     width: 240px;
     height: 440;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
 }
 
 .list li img {
@@ -377,6 +379,7 @@ ul {
 .list li p {
     width: 240px;
     height: 40px;
+    overflow: hidden;
 }
 
 .price {
