@@ -22,22 +22,21 @@ gulp.task("copyImag", function() {
 gulp.task("copyJs", function() {
     gulp.src("js/*.js")
         //.pipe(concat("min.js"))
+        // .pipe(gulp.dest("dist/js"))
+        // .pipe(connect.reload());
+        .pipe(uglify())
         .pipe(gulp.dest("dist/js"))
-        .pipe(connect.reload());
-    // .pipe(uglify())
-    // .pipe(rename({ suffix: ".min" }))
-    // .pipe(gulp.dest("dist/js"))
 })
 gulp.task("cleanCss", function() {
-        gulp.src("css/*.css")
-            .pipe(cleanCss())
-            .pipe(gulp.dest("dist/css"))
-    })
-    // gulp.task("babel", function() {
-    //     gulp.src("js/*.js")
-    //         .pipe(babel({ "presets": ["es2015"] }))
-    //         .pipe(gulp.dest("dist/js"))
-    // })
+    gulp.src("css/*.css")
+        .pipe(cleanCss())
+        .pipe(gulp.dest("dist/css"))
+})
+gulp.task("babel", function() {
+    gulp.src("js/*.js")
+        .pipe(babel({ "presets": ["es2015"] }))
+        .pipe(gulp.dest("dist/js"))
+})
 gulp.task("watch", function() {
     gulp.watch("*.html", ["copyHtml"]);
     gulp.watch("img/*", ["copyImag"]);
