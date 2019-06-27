@@ -4,27 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <title>京东注册页</title>
-    <link rel="stylesheet" href="css/regist.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
 
+    <link rel="stylesheet" href="css/regist.css" />
+    <link rel="icon" href="//www.jd.com/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">京东用户注册协议和隐私政策</h4>
+                </div>
+                <div class="modal-body">
+                    <p>在你注册京东</p>
+                    <p>在你注册京东</p>
+                    <p>在你注册京东</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">同意并继续</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <header>
         <div class="dh">
-            <a href="https://www.jd.com" class="logo ">
+            <a href="index.html" class="logo ">
             </a>
             <div class="logo-title">欢迎注册</div>
-            <div class="dl">已有账号？ <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http://www.jd.com">请登录&gt;</a></div>
+            <div class="dl">已有账号？ <a href="login.html">请登录&gt;</a></div>
         </div>
     </header>
 
     <section>
         <article class="bd">
             <form action="login.html" method="" id="zhuce">
-                <p class="yan"><b></b>验证完成后，你可以使用该手机登录或找回密码</p>
-                <p class="yan1"><b></b>请输入手机号</p>
-                <p class="yan2"><b></b>格式错误</p>
+
                 <div class="num">
                     <div class="sz">
                         <span class="one">1</span>
@@ -40,34 +63,114 @@
                         <span class="zccg"><p>注册成功</p></span>
                     </div>
                 </div>
-                <div class="phone">
-                    <p class="zg">中国 0086 v</p>
-                    <p class="x">x</p>
-                    <p class="v">v</p>
-                    <input placeholder="建议使用常用手机号"></input>
-                </div>
-                <div class="check">
 
-                    <input type="button" value="点击按钮进行验证" />
+                <div class="reg-form">
+                    <div id="reg-form">
+                        <p class="yan"><b></b>验证完成后，你可以使用该手机登录或找回密码</p>
+                        <p class="yan1"><b></b>请输入手机号</p>
+                        <p class="yan2"><b></b>格式错误</p>
+                        <div class="phone">
+                            <p class="zg">中国 0086 v</p>
+                            <p class="x">x</p>
+                            <p class="v">v</p>
+                            <input placeholder="建议使用常用手机号"></input>
+                        </div>
+                        <div class="check">
+                            <input type="button" value="点击按钮进行验证" />
+                            <div class="form-item form-item-phonecode">
+                                <div class="phonecode-left" style="border-color: rgb(221, 221, 221);">
+                                    <label id="pyz">手机验证码</label>
+                                    <input type="text" name="mobileCode" maxlength="6" autocomplete="off" id="phoneCode" class="field phonecode" placeholder="输入验证码">
+                                    <i class="i-status"></i>
+                                    <i class="i-cancel" style="display: none;"></i>
+                                </div>
+                                <button id="getPhoneCode" class="btn-phonecode" type="button">重新获取</button>
+                                <div class="input-tip">
+                                    <span><i class="i-def"></i>验证码已发送，120秒内输入有效</span>
+                                </div>
+                                <div class="audio-tip">收不到短信验证码？点击&nbsp;<span class="get-auth-code " clstag="pageclick|keycount|reg_puser_201804031|13 ">获取语音验证码</span></div>
+                            </div>
+                        </div>
+                        <div class="next ">
+                            <input type="button " value="下一步 " />
+                        </div>
+                    </div>
 
-                    <div class="form-item form-item-phonecode">
-                        <div class="phonecode-left" style="border-color: rgb(221, 221, 221);">
-                            <label>手机验证码</label>
-                            <input type="text" name="mobileCode" maxlength="6" autocomplete="off" id="phoneCode" class="field phonecode" placeholder="输入验证码">
+
+                    <div id="step2-wrap">
+                        <div class="form-item form-item-account form-item1" id="form-item-account" style="border-color: rgb(153, 153, 153);">
+                            <label>用　户　名</label>
+                            <input type="text" id="form-account" name="regName" class="field" autocomplete="off" maxlength="20" placeholder="您的账户名和登录名">
                             <i class="i-status"></i>
                             <i class="i-cancel" style="display: none;"></i>
                         </div>
-                        <button id="getPhoneCode" class="btn-phonecode" type="button">重新获取</button>
                         <div class="input-tip">
-                            <span><i class="i-def"></i>验证码已发送，120秒内输入有效</span>
+                            支持中文、英文、数字、“-”、“_”的组合，4-20个字符
                         </div>
-                        <div class="audio-tip">收不到短信验证码？点击&nbsp;<span class="get-auth-code " clstag="pageclick|keycount|reg_puser_201804031|13 ">获取语音验证码</span></div>
+                        <div class="form-item form-item1">
+                            <label>设 置 密 码</label>
+                            <input autocomplete="off" type="password" name="pwd" id="form-pwd" class="field" maxlength="20" placeholder="建议使用两种或两种以上字符组合">
+                            <i class="i-status"></i>
+                            <i class="i-cancel"></i>
+
+                        </div>
+                        <div class="input-tip ">
+                            <p class="jianyi">建议使用字母、数字和符号两种及以上的组合，6-20个字符"</p>
+                            <!-- <p class="pwdt"></p>
+                            <div class="pwdyz">
+                                <em></em>
+                                <em></em>
+                                <em></em>
+                            </div>
+                            <div class="pwdyz">
+                                <em>弱</em>
+                                <em>中</em>
+                                <em>强</em>
+                            </div> -->
+
+                        </div>
+                        <div class="form-item form-item1">
+                            <label>确 认 密 码</label>
+                            <input type="password" name="pwdRepeat" id="form-equalTopwd" class="field" placeholder="请再次输入密码">
+                            <i class="i-status"></i>
+                            <i class="i-cancel"></i>
+                        </div>
+                        <div class="input-tip">
+                            请再次输入密码
+                        </div>
+                        <div class="item-email-wrap" style="display: block;">
+                            <div class="form-item form-item1" style="border-color: rgb(153, 153, 153);">
+                                <label>邮 箱 验 证</label>
+                                <input type="text" name="email" id="form-email" class="field" autocomplete="off" maxlength="50" placeholder="请输入邮箱">
+                                <i class="i-status"></i>
+                            </div>
+                            <div class="input-tip">
+                                验证完成后，你可以使用该邮箱登录"
+                            </div>
+                        </div>
+                        <div class="item-mailcode-wrap" style="display: block;">
+                            <div class="form-item form-item-mailcode form-item1">
+                                <div class="mailcode-left" style="border-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid;">
+                                    <label>邮箱验证码</label>
+                                    <input type="text" name="mailCode" maxlength="6" autocomplete="off" id="mailCode" class="field mailcode" placeholder="请输入邮箱验证码">
+                                    <i class="i-status"></i>
+                                    <i class="i-cancel"></i>
+                                </div>
+                                <button id="getMailCode" class="btn-mailcode" type="button" clstag="pageclick|keycount|reg_puser_201804031|16" style="border-top: 1px solid rgb(221, 221, 221); border-right: 1px solid rgb(221, 221, 221); border-bottom: 1px solid rgb(221, 221, 221); border-left: none; border-image: initial;">获取验证码</button>
+                                <div class="input-tip">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div><button class="btn-register" id="form-register" clstag="pageclick|keycount|reg_puser_201804031|18">立即注册</button></div>
+                        <div class="input-tip">
+                            <span></span>
+                        </div>
+                        <!--<div class="back-btn" id="back-btn">返回上一步</div>-->
                     </div>
 
                 </div>
-                <div class="next ">
-                    <input type="button " value="下一步 " />
-                </div>
+
                 <div class="db ">
                     <span class="gs_icon "><a href="# "><img src="img/yonghu.png " /></a></span>
                     <span class="gs "><p><a href="# ">企业用户注册</a></p></span>
@@ -80,6 +183,10 @@
                     <input type="text " name=" " id="input1 " placeholder="请输入右方数字进行验证 ">
                     <input type="text " name=" " id="input2 ">
                 </div>
+                <div class="phoneyz ">
+                    <input type="text " name=" " id="input ">
+                </div>
+
                 <footer>
                     <nav>
                         <ul>
@@ -106,6 +213,7 @@
 
     <a class="feedback " href="http://surveys.jd.com/index.php?r=survey/index/sid/447941/lang/zh-Hans " style="margin-top: -67.5px; position: fixed; right: 0px; bottom: 50%; "></a>
     <script src="js/jquery-1.11.0.js "></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/regist.js "></script>
 </body>
 

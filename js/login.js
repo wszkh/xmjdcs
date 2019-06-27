@@ -73,3 +73,19 @@ $(function() {
 $(".refresh-btn").on("click", function() {
     $(".qrcode-error-2016").css("display", "none")
 })
+
+//数据
+$(function() {
+    $("#log").on("click", function(event) {
+        $.post("http://47.104.244.134:8080/userlogin.do", {
+            name: $(".username input").val(),
+            password: $(".password input").val(),
+        }).done(data => {
+            console.log(data)
+            console.log(data.data.token)
+            if (data.msg === "OK") {
+                window.open('http://localhost:8080/index.html?token=' + data.data.token)
+            }
+        })
+    })
+})
