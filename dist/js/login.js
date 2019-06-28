@@ -87,7 +87,7 @@ $(function() {
 
             console.log(data.data.token)
             if (data.msg === "OK") {
-                window.open('http://localhost:8080/index.html?token=' + data.data.token)
+                window.open('index.html?token=' + data.data.token)
             }
         })
     })

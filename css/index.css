@@ -95,11 +95,16 @@ u {
 }
 
 .fl {
-    float: left
+    float: left;
+}
+
+#o-header-2013 {
+    width: 100%;
 }
 
 .fr {
-    float: right
+    width: 100%;
+    margin-left: 200px;
 }
 
 .al {
@@ -2401,7 +2406,7 @@ body {
 }
 
 #settleup-2014 .cw-icon {
-    width: 91px;
+    width: 100px;
     height: 34px;
     border: 1px solid #DFDFDF;
     padding: 0 28px 0 19px;
@@ -2427,7 +2432,7 @@ body {
     font-size: 12px
 }
 
-#settleup-2014 .ci-left {
+.ci-left {
     top: 9px;
     left: 90px;
     width: 16px;
@@ -2463,7 +2468,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     margin-top: 27px;
     float: right;
     margin-left: 30px;
-    width: 120px;
+    width: 130px;
 }
 
 .headerqrcode_lk {

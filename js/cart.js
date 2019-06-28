@@ -20,11 +20,11 @@ var token = getParam('token');
 
 //调转首页判断
 if (location.search.substring(1).split("=")[1] != "null") {
-    $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html?token=' + token);
-    $("#logo").attr("href", 'http://localhost:8080/index.html?token=' + token);
+    $("#ttbar-home a").attr("href", 'index.html?token=' + token);
+    $("#logo").attr("href", 'index.html?token=' + token);
 } else {
-    $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html');
-    $("#logo").attr("href", 'http://localhost:8080/index.html');
+    $("#ttbar-home a").attr("href", 'index.html');
+    $("#logo").attr("href", 'index.html');
 }
 
 class Cart {

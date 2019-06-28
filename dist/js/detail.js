@@ -21,11 +21,11 @@
 
      //调转首页判断
      if (location.search.substring(1).split("=")[1] != "null") {
-         $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html?token=' + token);
-         $(".logo").attr("href", 'http://localhost:8080/index.html?token=' + token);
+         $("#ttbar-home a").attr("href", 'index.html?token=' + token);
+         $(".logo").attr("href", 'index.html?token=' + token);
      } else {
-         $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html');
-         $(".logo").attr("href", 'http://localhost:8080/index.html');
+         $("#ttbar-home a").attr("href", 'index.html');
+         $(".logo").attr("href", 'index.html');
      }
 
 
@@ -81,12 +81,12 @@
                      console.log(i)
                      var msg = confirm("你即将添加多件该商品确定吗?")
                      if (msg) {
-                         window.open('http://localhost:8080/cart.html?token=' + token);
+                         window.open('cart.html?token=' + token);
                      }
                  }
              } else {
                  alert("请登录 即将调转到登录页面")
-                 window.open('http://localhost:8080/login.html');
+                 window.open('login.html');
              }
 
          })

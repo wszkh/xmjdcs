@@ -205,13 +205,13 @@ $(function() {
     //首页调转到首页判断
     if (location.search.substring(1).split("=")[1] != "null") {
         console.log($("#ttbar-home a"))
-        $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html?token=' + token);
-        $("#logo-2014 a").attr("href", 'http://localhost:8080/index.html?token=' + token);
-        $(".chaoshi_menu_list_link_on").attr("href", 'http://localhost:8080/index.html?token=' + token);
+        $("#ttbar-home a").attr("href", 'index.html?token=' + token);
+        $("#logo-2014 a").attr("href", 'index.html?token=' + token);
+        $(".chaoshi_menu_list_link_on").attr("href", 'index.html?token=' + token);
     } else {
-        $("#ttbar-home a").attr("href", 'http://localhost:8080/index.html');
-        $("#logo-2014 a").attr("href", 'http://localhost:8080/index.html');
-        $(".chaoshi_menu_list_link_on").attr("href", 'http://localhost:8080/index.html');
+        $("#ttbar-home a").attr("href", 'index.html');
+        $("#logo-2014 a").attr("href", 'index.html');
+        $(".chaoshi_menu_list_link_on").attr("href", 'index.html');
     }
 
 
@@ -245,7 +245,7 @@ $(function() {
                 $(".box").eq(i).css("display", "none")
             })
             $(".lists a").eq(i).on("click", function() {
-                $(this).attr("href", 'http://localhost:8080/list.html?token=' + token + '&&id=' + data[i].id);
+                $(this).attr("href", 'list.html?token=' + token + '&&id=' + data[i].id);
             })
 
         }
@@ -289,28 +289,28 @@ $(function() {
             $(".chaoshi_category_focus_key_inner a").eq(i).html(data.data[i].typename);
 
             $(".chaoshi_seckill_bd a").eq(i).on("click", function() {
-                $(this).attr("href", 'http://localhost:8080/list.html?token=' + token + '&&id=' + data.data[i].id);
+                $(this).attr("href", 'list.html?token=' + token + '&&id=' + data.data[i].id);
             })
             $(".cdi_pic  a").eq(i).on("click", function() {
-                $(this).attr("href", 'http://localhost:8080/list.html?token=' + token + '&&id=' + data.data[i].id);
+                $(this).attr("href", 'list.html?token=' + token + '&&id=' + data.data[i].id);
             })
             $(".chaoshi_menu_list_item  a:not(:first)").eq(i).on("click", function() {
-                $(this).attr("href", 'http://localhost:8080/list.html?token=' + token + '&&id=' + data.data[i].id);
+                $(this).attr("href", 'list.html?token=' + token + '&&id=' + data.data[i].id);
             })
             $(".chaoshi_menu_list_item  a:first").on("click", function() {
-                $(this).attr("href", 'http://localhost:8080/index.html?token=' + token);
+                $(this).attr("href", 'index.html?token=' + token);
             })
 
 
             $(".cdb_bd a").eq(i).on("click", function() {
-                $(this).attr("href", 'http://localhost:8080/list.html?token=' + token + '&&id=' + data.data[i].id);
+                $(this).attr("href", 'list.html?token=' + token + '&&id=' + data.data[i].id);
             })
 
             $(".goods_pic").eq(i).on("click", function() {
-                $(this).attr("href", 'http://localhost:8080/list.html?token=' + token + '&&id=' + data.data[i].id);
+                $(this).attr("href", 'list.html?token=' + token + '&&id=' + data.data[i].id);
             })
             $(".chaoshi_brand_item").eq(i).on("click", function() {
-                    $(this).attr("href", 'http://localhost:8080/list.html?token=' + token + '&&id=' + data.data[i].id);
+                    $(this).attr("href", 'list.html?token=' + token + '&&id=' + data.data[i].id);
                 })
                 //首页添加购物车
             $(".cdb_add_txt").eq(i).on("click", function() {
@@ -321,13 +321,13 @@ $(function() {
                     }).done(data => {
                         if (data.msg === "成功") {
                             $(".btn").on("click", function() {
-                                window.open('http://localhost:8080/cart.html?token=' + token)
+                                window.open('cart.html?token=' + token)
                             })
                         }
                     })
-                    $(".J_goods_add").attr("href", 'http://localhost:8080/cart.html?token=' + token);
+                    $(".J_goods_add").attr("href", 'cart.html?token=' + token);
                 } else {
-                    $(".J_goods_add").attr("href", 'http://localhost:8080/login.html');
+                    $(".J_goods_add").attr("href", 'login.html');
                 }
             })
             $(".cdi_add").eq(i).on("click", function() {
@@ -338,7 +338,7 @@ $(function() {
                     }).done(data => {
                         if (data.msg === "成功") {
                             $(".btn").on("click", function() {
-                                window.open('http://localhost:8080/cart.html?token=' + token)
+                                window.open('cart.html?token=' + token)
                             })
                         }
                     })
@@ -355,7 +355,7 @@ $(function() {
                     }).done(data => {
                         if (data.msg === "成功") {
                             $(".btn").on("click", function() {
-                                window.open('http://localhost:8080/cart.html?token=' + token)
+                                window.open('cart.html?token=' + token)
                             })
                         }
                     })
@@ -376,7 +376,7 @@ $(function() {
         var timer = setInterval(function() {
             var $text = $(" .time_item_txt");
             var starTime = new Date();
-            var endTime = new Date("2019/6/25 16:00:00")
+            var endTime = new Date("2019/6/30 00:00:00")
             var ss = (endTime - starTime) / 1000;
             var day = Math.floor(ss / 24 / 3600);
             var hours = Math.floor(ss / 60 / 60 % 24);
